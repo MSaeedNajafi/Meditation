@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+
+* {
+  font-family: 'Encode Sans Expanded', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+    font-family: 'MonteCarlo', sans-serif;
+    font-size: 50px;
+}
+.selected {
+  color: #ff0000; 
+}
+
+table {
+  width: 100%;
+  border: 1px solid transparent;
+  border-collapse: collapse;
+  color:black;
+  
+}
+
+th, td {
+  border: 1px solid transparent;
+  border-collapse: collapse;
+}
+
+th, td,  tr {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+    width: 50%;
+}
+
+td {
+  text-align: right;
+}
