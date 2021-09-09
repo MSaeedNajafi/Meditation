@@ -3,12 +3,11 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import COL from "../Colors";
-
+//background: ${({ scrollNav }) =>   scrollNav ? COL.navBackgroundColor : COL.navBackgroundColor};
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) =>
-    scrollNav ? COL.navBackgroundColor : "transparent"};
+  background: ${COL.navBackgroundColor};
   height: 80px;
-  margin-top: -80px;
+  // margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,9 +78,9 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  // margin-right: -24px;
   list-style: none;
   tetx-align: center;
+  // margin-right: -24px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -109,7 +108,7 @@ export const NavLogoLink = styled(LinkS)`
   justify-self: flex-start;
   display: flex;
   cursor: pointer;
-  font-size: 46px;
+  font-size: 30px;
   align-items: center;
   // margin-left: 24px;
   font-weight: bold;

@@ -44,7 +44,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavBarCotainer>
             <NavLogoLink to="/" onClick={toggleHome}>
-              <Emoji src={emo} />
+              {/* <Emoji src={emo} /> */}
               Meditation
             </NavLogoLink>
             <MobileIcon onClick={toggle}>
@@ -75,49 +75,19 @@ const Navbar = ({ toggle }) => {
                   Server-Specs
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  to="id3"
-                  exact="true"
-                  offset={-80}
-                >
-                  Link 3
-                </NavLink>
-              </NavItem> */}
-              {/* <NavItem>
-                <NavLink
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  to="services"
-                  exact="true"
-                  offset={-80}
-                >
-                  Services
-                </NavLink>
-              </NavItem> */}
-              <NavBtn>
-                <NavBtnLink
-                  onClick={() => {
-                    console.log("pressed");
-                  }}
-                  to="/contact"
-                >
-                  Contact Us
-                </NavBtnLink>
-              </NavBtn>
-              <NavItem>
-                <Atag href="https://explorer.radixdlt.com/#/validators/rv1qgfmskllt5lj2l2q2crgat6ml4t9u0n36phxevv3qy9yegxapdxnjgnqsuh">
-                  Explorer
-                </Atag>
-              </NavItem>
+
             </NavMenu>
-            {/* <NavBtn>
-          <NavBtnLink to="/Link4">Click Here</NavBtnLink>
-        </NavBtn> */}
+
+            <NavBtn>
+              <NavBtnLink
+                onClick={() => {
+                  console.log("pressed");
+                }}
+                to="/contact"
+              >
+                Contact Us
+              </NavBtnLink>
+            </NavBtn>
           </NavBarCotainer>
         </Nav>
       </IconContext.Provider>
