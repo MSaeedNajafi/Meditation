@@ -6,6 +6,7 @@ import InfoSection from "../InfoSecction";
 import { HomeObjOne, HomeObjTwo, HomeObjThree } from "../InfoSecction/Data";
 import ServicesElements from "../Services";
 import Footer from "../Footer";
+import MeditateElements from "../HowToMeditate";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,11 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...HomeObjOne} />
+      <ServicesElements />
       <InfoSection {...HomeObjTwo} />
-      {/* <InfoSection {...HomeObjThree} />
-      <ServicesElements /> */}
+      <MeditateElements />
+      <InfoSection {...HomeObjThree} />
+
       <Footer />
     </>
   );

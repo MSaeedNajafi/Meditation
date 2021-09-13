@@ -59,7 +59,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  About Fauzia
+                  Mediatation
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -71,7 +71,19 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  About Meditation
+                  Why Meditation
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  to="id3"
+                  exact="true"
+                  offset={-80}
+                >
+                  Learn More
                 </NavLink>
               </NavItem>
             </NavMenu>

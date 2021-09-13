@@ -40,7 +40,7 @@ const COL = {
   heroTitleColor: "#fff",
   heroTextColor: "#fff",
   //services
-  servicesBckColor: "#010606",
+  servicesBckColor: "#7e8846",
   ServicesCardBckColor: "#fff",
   SerivesH1Color: "#fff",
   //footer

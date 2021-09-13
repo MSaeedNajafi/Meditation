@@ -16,30 +16,32 @@ const ServicesElements = () => {
   return (
     <>
       <ServicesContainer id="services">
-        <ServicesH1>Our Services</ServicesH1>
+        <ServicesH1>Meditation is practiced in one of three modes:</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
             <ServicesIcon src={Icon1} />
-            <ServicesH2>Validating Transtions</ServicesH2>
+            <ServicesH2>Concentration</ServicesH2>
             <ServicesP>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s.
+              focusing attention on a single object, internal or external
+              (focused attention meditation)
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon2} />
-            <ServicesH2>Get Rewards</ServicesH2>
+            <ServicesH2>Observation</ServicesH2>
             <ServicesP>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s.
+              paying attention to whatever is predominant in your experience in
+              the present moment
+              {/** , without allowing the attention to get
+              stuck on any particular thing (open monitoring meditation) */}
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
             <ServicesIcon src={Icon3} />
-            <ServicesH2>Increase Profit</ServicesH2>
+            <ServicesH2>Awareness</ServicesH2>
             <ServicesP>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s.
+              allowing awareness to remain present, undistracted and not engaged
+              with either focusing or observing
             </ServicesP>
           </ServicesCard>
         </ServicesWrapper>

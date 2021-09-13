@@ -56,7 +56,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopTitile = styled.p`
-  color: ${COL.topTitleColor};
+  color: ${({ lightText }) =>
+    lightText ? COL.topTitleColor : COL.titleInfoPrimaryColor};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

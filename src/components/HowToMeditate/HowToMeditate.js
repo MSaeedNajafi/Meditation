@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import COL from "../Colors";
 
-export const ServicesContainer = styled.div`
-  height: 800px;
+export const MeditateContainer = styled.div`
+  height: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,16 +12,20 @@ export const ServicesContainer = styled.div`
   position: relative;
   z-index: 1;
 
+  @media screen and (max-width: 1000px) {
+    height: 1400px;
+  }
+
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 2400px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 2500px;
   }
 `;
 
-export const ServicesWrapper = styled.div`
+export const MeditateWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -40,7 +44,7 @@ export const ServicesWrapper = styled.div`
   }
 `;
 
-export const ServicesCard = styled.div`
+export const MeditateCard = styled.div`
   background: ${COL.ServicesCardBckColor};
   display: flex;
   flex-direction: column;
@@ -51,6 +55,7 @@ export const ServicesCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+  height: 100%;
 
   &:hover {
     transform: scale(1.02);
@@ -59,16 +64,16 @@ export const ServicesCard = styled.div`
   }
 `;
 
-export const ServicesIcon = styled.img`
-  height: 160px;
-  width: 160px;
+export const MeditateIcon = styled.img`
+  height: 130px;
+  width: 130px;
   margin-bottom: 10px;
 `;
 
-export const ServicesH1 = styled.h1`
-  font-size: 1.5rem;
+export const MeditateH1 = styled.h1`
+  font-size: 2.5rem;
   color: ${COL.SerivesH1Color};
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 
   @media screen and (max-width: 480px) {
     height: 2rem;
@@ -76,13 +81,50 @@ export const ServicesH1 = styled.h1`
   }
 `;
 
-export const ServicesH2 = styled.h2`
+export const MeditateH2 = styled.h2`
   font-size: 1rem;
   //   color: ${COL.SerivesH1Color};
   margin-bottom: 10px;
 `;
 
-export const ServicesP = styled.p`
+export const MeditateP = styled.p`
   font-size: 1rem;
   text-align: center;
+`;
+
+export const MeditateDesc = styled.p`
+  font-size: 24px;
+  color: ${COL.SerivesH1Color};
+  margin-bottom: 64px;
+  padding: 0 68px;
+
+  @media screen and (max-width: 480px) {
+    height: 2rem;
+    font-size: 16px;
+    margin-bottom: 150px;
+  }
+`;
+
+export const MeditateBottomDesc = styled.p`
+  font-size: 24px;
+  color: ${COL.SerivesH1Color};
+  margin-top: 20px;
+  padding: 0 68px;
+
+  @media screen and (max-width: 480px) {
+    height: 2rem;
+    font-size: 16px;
+    // margin-bottom: 150px;
+  }
+`;
+
+export const MeditateBottomH1 = styled.h1`
+  font-size: 2.5rem;
+  color: ${COL.SerivesH1Color};
+  margin-top: 32px;
+
+  @media screen and (max-width: 480px) {
+    // height: 2rem;
+    font-size: 1rem;
+  }
 `;

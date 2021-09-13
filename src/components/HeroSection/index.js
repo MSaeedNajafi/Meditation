@@ -38,7 +38,7 @@ const HeroSection = () => {
         </HeroH1>
         {/* <HeroP>You always remain in control of your funds.</HeroP> */}
         <HeroP>Staking in Radix is non-custodial.</HeroP>
-        <HeroP>99.9% uptime</HeroP>
+        <HeroP>100% ontime</HeroP>
 
         <HeroBtnWrapper>
           <Button

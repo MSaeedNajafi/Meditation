@@ -41,41 +41,26 @@ const InfoSection = ({
         <InfoWapper>
           <InfoRow imgStart={imgStart}>
             <Coulmn1>
-              {/* {id == "about" ? <p>1</p> : <p>2</p>} */}
-              {id == "id2" || id == "about" ? (
-                id == "id2" ? (
-                  <>
-                    <TopTitile>{topTitle}</TopTitile>
-                    <Table />
-                  </>
-                ) : (
-                  <>
-                    {/* <TopTitile>{topTitle}</TopTitile> */}
-                    <Title lightText={lightText}>{title}</Title>
-                    <InputSlider />
-                  </>
-                )
-              ) : (
-                <TextWrapper>
-                  <Title lightText={lightText}>{title}</Title>
-                  <Description darkText={darkText}>{decsription}</Description>
-                  <BtnWrap>
-                    <Button
-                      to="home"
-                      smooth={true}
-                      duartion={500}
-                      spy={true}
-                      exact="true"
-                      offset={-80}
-                      primary={primary ? 1 : 0}
-                      dark={dark ? 1 : 0}
-                      dark2={dark2 ? 1 : 0}
-                    >
-                      {buttonLabel}
-                    </Button>
-                  </BtnWrap>
-                </TextWrapper>
-              )}
+              <TextWrapper>
+                <TopTitile lightText={lightText}> {topTitle}</TopTitile>
+                <Title lightText={lightText}>{title}</Title>
+                <Description darkText={darkText}>{decsription}</Description>
+                <BtnWrap>
+                  <Button
+                    to="home"
+                    smooth={true}
+                    duartion={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >
+                    {buttonLabel}
+                  </Button>
+                </BtnWrap>
+              </TextWrapper>
             </Coulmn1>
             <Coulmn2>
               <ImgWrap>
