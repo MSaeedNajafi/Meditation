@@ -44,7 +44,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavBarCotainer>
             <NavLogoLink to="/" onClick={toggleHome}>
-              Meditation with Fauzia
+              Meditation Fauzia
             </NavLogoLink>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -74,7 +74,6 @@ const Navbar = ({ toggle }) => {
                   About Meditation
                 </NavLink>
               </NavItem>
-
             </NavMenu>
 
             <NavBtn>

@@ -4,8 +4,12 @@ import COL from "../Colors";
 
 export const HeroContainer = styled.div`
   // background: ${COL.heroBackgroundColor};
-  background: rgb(126,136,70);
-background: linear-gradient(180deg, rgba(126,136,70) 50%, rgba(242,233,210,1) 50%);
+  background: rgb(126, 136, 70);
+  background: linear-gradient(
+    180deg,
+    rgba(126, 136, 70) 50%,
+    rgba(242, 233, 210, 1) 50%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +46,6 @@ export const HeroBg = styled.div`
   overflow: hidden;
   padding-left: 50px;
   padding-right: 50px;
-
 `;
 
 export const VideoBg = styled.video`
@@ -51,6 +54,7 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
+  margin-bottom: -5px;
 `;
 
 export const HeroContent = styled.div`

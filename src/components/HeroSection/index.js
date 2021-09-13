@@ -25,18 +25,18 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <div>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <div style={{ border: " 10px solid #ffda6b" }}>
+          <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
         </div>
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Meditation wth Fuzia
+          Meditation with Fuzia
           {/* <span style={{ color: "#00c389" }}> */}
-            {/* <RlogoWrap src={rlogo}></RlogoWrap>R */}
+          {/* <RlogoWrap src={rlogo}></RlogoWrap>R */}
           {/* </span> */}
         </HeroH1>
-        <HeroP>You always remain in control of your funds.</HeroP>
+        {/* <HeroP>You always remain in control of your funds.</HeroP> */}
         <HeroP>Staking in Radix is non-custodial.</HeroP>
         <HeroP>99.9% uptime</HeroP>
 
@@ -53,7 +53,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            Calculate your rewards {hover ? <ArrowForward /> : <ArrowRight />}
+            Contact Me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

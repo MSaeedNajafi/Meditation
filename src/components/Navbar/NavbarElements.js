@@ -3,11 +3,11 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import COL from "../Colors";
+import img from "../../images/bg images/bg2.jpg";
 //background: ${({ scrollNav }) =>   scrollNav ? COL.navBackgroundColor : COL.navBackgroundColor};
 export const Nav = styled.nav`
   background: ${COL.navBackgroundColor};
   height: 100px;
-  // margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,8 @@ export const Nav = styled.nav`
   top: 0; /* required */
   z-index: 10;
   // padding: 0.5rem calc((100vw - 1000px) / 2);
-
+  // background-image: url(${img});
+  // background-repeat: repeat-x;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -29,8 +30,8 @@ export const NavBarCotainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
+  padding: 0 50px;
+  max-width: 1500px;
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -52,7 +53,7 @@ export const MobileIcon = styled.div`
     display: block;
     position: absolute;
     // top: 0;
-    right: 0;
+    right: 20px;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -99,8 +100,9 @@ export const NavLogoLink = styled(LinkS)`
   font-size: 30px;
   align-items: center;
   // margin-left: 24px;
-  font-weight: bold;
+  // font-weight: bold;
   text-decoration: none;
+  // text-decoration: underline;
 
   @media screen and (max-width: 768px) {
     font-size: 25px;
@@ -117,7 +119,7 @@ export const NavLink = styled(LinkS)`
   height: 100%;
   cursor: pointer;
   font-size: 18px;
-  font-weight: 600;
+  // font-weight: 600;
   &.active {
     border-bottom: 3px solid ${COL.activeColor};
   }
