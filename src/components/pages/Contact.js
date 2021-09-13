@@ -3,7 +3,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import ScrollToTop from "../ScrollToTop";
 import Sidebar from "../SideBar";
-import SignIn from "../Signin";
+import Contact from "../Contact";
 
 function SigninPage() {
   return (
@@ -11,7 +11,7 @@ function SigninPage() {
       {/* <Sidebar />
       <Navbar /> */}
       <ScrollToTop />
-      <SignIn />
+      <Contact />
       {/* <Footer /> */}
     </>
   );

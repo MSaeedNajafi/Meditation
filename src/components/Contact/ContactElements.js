@@ -16,8 +16,8 @@ export const Container = styled.div`
 
   background: linear-gradient(
     180deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
+    rgba(126, 136, 70, 1) 0%,
+    rgba(255, 218, 107, 1) 100%
   );
 `;
 
@@ -37,7 +37,7 @@ export const Icon = styled(Link)`
   margin-top: 32px;
   text-decoration: none;
   color: ${COL.signinIconColor};
-  font-weight: 700;
+  // font-weight: 700;
   font-size: 32px;
 
   @media screen and (max-width: 400px) {

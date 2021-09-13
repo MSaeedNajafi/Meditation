@@ -11,7 +11,7 @@ import {
   FormInput,
   Text,
   FormInputTextArea,
-} from "./SigninElements";
+} from "./ContactElements";
 import { send } from "emailjs-com";
 
 const ContactUs = () => {
@@ -40,10 +40,10 @@ const ContactUs = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">ArcticStake</Icon>
+          <Icon to="/">Meditation Fauzia</Icon>
           <FormCotent>
             <Form action="#" onSubmit={onSubmit}>
-              <FormH1>Contact Ussss</FormH1>
+              <FormH1>Contact Us</FormH1>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput
                 type="email"
