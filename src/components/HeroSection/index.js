@@ -37,7 +37,7 @@ const HeroSection = () => {
           {/* </span> */}
         </HeroH1>
         {/* <HeroP>You always remain in control of your funds.</HeroP> */}
-        <HeroP>Really really Helpfuull.</HeroP>
+        <HeroP>Really really Helpful.</HeroP>
         <HeroP>100% ontime</HeroP>
 
         <HeroBtnWrapper>
