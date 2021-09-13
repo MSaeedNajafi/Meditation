@@ -25,13 +25,13 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <div style={{ border: " 10px solid #ffda6b" }}>
+        <div style={{ border: " 10px solid #ffda6b", borderRadius: 5 }}>
           <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
         </div>
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Meditation with Fuzia
+          Meditation with Fauzia
           {/* <span style={{ color: "#00c389" }}> */}
           {/* <RlogoWrap src={rlogo}></RlogoWrap>R */}
           {/* </span> */}

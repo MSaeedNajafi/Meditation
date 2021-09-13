@@ -19,10 +19,10 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SideBarWrapper>
         <SideBarMenu>
           <SideBarLink onClick={toggle} to="home">
-            Calculator
+            Meditation
           </SideBarLink>
           <SideBarLink onClick={toggle} to="about">
-            Server-Specs
+            About
           </SideBarLink>
           {/* <SideBarLink onClick={toggle} to="id2">
             Page 2

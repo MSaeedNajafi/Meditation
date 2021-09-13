@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import COL from "../Colors";
-import img from "../../images/bg images/bg2.jpg";
+import img from "../../images/bg images/bg3.jpg";
 //background: ${({ scrollNav }) =>   scrollNav ? COL.navBackgroundColor : COL.navBackgroundColor};
 export const Nav = styled.nav`
   background: ${COL.navBackgroundColor};

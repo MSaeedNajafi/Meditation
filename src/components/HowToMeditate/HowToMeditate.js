@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import COL from "../Colors";
+import bg from "../../images/bg images/bg3.jpg";
 
 export const MeditateContainer = styled.div`
   height: 1200px;
@@ -8,7 +9,6 @@ export const MeditateContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: ${COL.servicesBckColor};
-
   position: relative;
   z-index: 1;
 
