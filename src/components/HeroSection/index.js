@@ -25,15 +25,16 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
+        <div>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        </div>
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Stake with us and earn
-          <span style={{ color: "#00c389" }}>
-            <RlogoWrap src={rlogo}></RlogoWrap>R
-          </span>
-          adix (XRD) tokens.
+          Meditation wth Fuzia
+          {/* <span style={{ color: "#00c389" }}> */}
+            {/* <RlogoWrap src={rlogo}></RlogoWrap>R */}
+          {/* </span> */}
         </HeroH1>
         <HeroP>You always remain in control of your funds.</HeroP>
         <HeroP>Staking in Radix is non-custodial.</HeroP>

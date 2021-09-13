@@ -28,7 +28,7 @@ const COL = {
   sideBarTextHoverColor: "#ffda6b",
   //Info
   infoContainer: "#010606",
-  infoSecondaryContainer: "#f9f9f9",
+  infoSecondaryContainer: "#f2e9d2 ",
   titleInfoPrimaryColor: "#010606",
   tilteInfoSecondaryColor: "#f7f8fa",
   descPrimary: "#fff",

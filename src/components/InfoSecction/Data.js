@@ -4,7 +4,7 @@ import img3 from "../../images/svg-3.svg";
 import img4 from "../../images/svg-4.svg";
 import img5 from "../../images/svg-5.svg";
 import img6 from "../../images/svg-6.svg";
-import img7 from "../../images/svg-7.svg";
+import img7 from "../../images/Slider/2.jpg";
 import img8 from "../../images/svg-8.svg";
 
 export const HomeObjOne = {
@@ -18,7 +18,7 @@ export const HomeObjOne = {
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
   buttonLabel: "Get Sarted",
   imgStart: false,
-  img: img8,
+  img: img1,
   alt: "Radix",
   dark: true,
   primary: true,

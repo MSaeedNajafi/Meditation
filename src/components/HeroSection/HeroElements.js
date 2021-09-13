@@ -3,12 +3,14 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import COL from "../Colors";
 
 export const HeroContainer = styled.div`
-  background: ${COL.heroBackgroundColor};
+  // background: ${COL.heroBackgroundColor};
+  background: rgb(126,136,70);
+background: linear-gradient(180deg, rgba(126,136,70) 50%, rgba(242,233,210,1) 50%);
   display: flex;
   justify-content: center;
   align-items: center;
   // padding 0 30px;
-  height: 800px;
+  // height: 800px;
   position: relative;
   z-index: 1;
 
@@ -19,12 +21,12 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, transparent 100%);
+    // background: linear-gradient(
+    //     180deg,
+    //     rgba(0, 0, 0, 0.2) 0%,
+    //     rgba(0, 0, 0, 0.6) 100%
+    //   ),
+    //   linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, transparent 100%);
     z-index: 2;
   }
 `;
@@ -38,6 +40,9 @@ export const HeroBg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  padding-left: 50px;
+  padding-right: 50px;
+
 `;
 
 export const VideoBg = styled.video`

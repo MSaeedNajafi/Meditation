@@ -3,8 +3,7 @@ import COL from "../Colors";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) =>
-    lightBg ? COL.infoSecondaryContainer : COL.infoContainer};
+  background: #f2e9d2;
   position: relative;
   z-index: 1;
 

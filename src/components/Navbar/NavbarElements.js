@@ -6,7 +6,7 @@ import COL from "../Colors";
 //background: ${({ scrollNav }) =>   scrollNav ? COL.navBackgroundColor : COL.navBackgroundColor};
 export const Nav = styled.nav`
   background: ${COL.navBackgroundColor};
-  height: 80px;
+  height: 100px;
   // margin-top: -80px;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@ export const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
+    // top: 0;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -88,22 +88,10 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 100px;
 `;
 
 export const NavLogoLink = styled(LinkS)`
-  // color: ${COL.navLinkTextColor};
-  // display: flex;
-  // align-items: center;
-  // text-decoration: none;
-  // padding: 0 1rem;
-  // height: 100%;
-  // cursor: pointer;
-
-  // &.active {
-  //   border-bottom: 3px solid ${COL.activeColor};
-  // }
-
   color: ${COL.logoTextColor};
   justify-self: flex-start;
   display: flex;
@@ -128,7 +116,8 @@ export const NavLink = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
+  font-size: 18px;
+  font-weight: 600;
   &.active {
     border-bottom: 3px solid ${COL.activeColor};
   }
@@ -157,6 +146,7 @@ export const NavBtnLink = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   // margin-left: 24px;
+  font-weight: bold;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${COL.btnHoverColor};
