@@ -17,8 +17,29 @@ import Icon3 from "../../images/svg-15.svg";
 import Icon4 from "../../images/svg-13.svg";
 import Icon5 from "../../images/svg-14.svg";
 import Icon6 from "../../images/svg-16.svg";
+import { makeStyles } from "@material-ui/core/styles";
+import Divider from "@material-ui/core/Divider";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+    maxWidth: 800,
+    marginBottom: 64,
+    // backgroundColor: theme.palette.background.paper,
+  },
+
+  btm: {
+    width: "100%",
+    maxWidth: 800,
+    marginTop: 64,
+    marginBottom: 64,
+    // backgroundColor: theme.palette.background.paper,
+  },
+}));
 
 const MeditateElements = () => {
+  const classes = useStyles();
+
   return (
     <>
       <MeditateContainer id="Meditate">
@@ -26,6 +47,7 @@ const MeditateElements = () => {
         <MeditateDesc>
           Find place to sit that feels calm and quiet to you.
         </MeditateDesc>
+        <Divider className={classes.root} />
 
         <MeditateWrapper>
           <MeditateCard>
@@ -78,7 +100,7 @@ const MeditateElements = () => {
             </MeditateP>
           </MeditateCard>
         </MeditateWrapper>
-        <MeditateBottomH1>This is it!</MeditateBottomH1>
+        <Divider className={classes.btm} />
         <MeditateBottomDesc>
           Meditation is no more complicated than what is described above. It is
           that simple … and that challenging. It’s also powerful and worth it.

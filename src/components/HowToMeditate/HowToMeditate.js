@@ -3,25 +3,28 @@ import COL from "../Colors";
 import bg from "../../images/bg images/bg3.jpg";
 
 export const MeditateContainer = styled.div`
-  height: 1200px;
+  height: 1300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: ${COL.servicesBckColor};
+  // background-image: url(${bg});
+  // background-repeat: no-repeat;
+  // background-size: auto 100%;
   position: relative;
   z-index: 1;
 
   @media screen and (max-width: 1000px) {
-    height: 1400px;
+    height: 1600px;
   }
 
   @media screen and (max-width: 768px) {
-    height: 2400px;
+    height: 2600px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 2500px;
+    height: 2700px;
   }
 `;
 
@@ -74,7 +77,7 @@ export const MeditateH1 = styled.h1`
   font-size: 2.5rem;
   color: ${COL.SerivesH1Color};
   margin-bottom: 32px;
-
+  text-transform: uppercase;
   @media screen and (max-width: 480px) {
     height: 2rem;
     font-size: 1rem;
@@ -94,6 +97,7 @@ export const MeditateP = styled.p`
 
 export const MeditateDesc = styled.p`
   font-size: 24px;
+  text-transform: uppercase;
   color: ${COL.SerivesH1Color};
   margin-bottom: 64px;
   padding: 0 68px;

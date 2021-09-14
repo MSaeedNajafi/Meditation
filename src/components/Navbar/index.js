@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-100}
                 >
                   Mediatation
                 </NavLink>
@@ -69,7 +69,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   to="id2"
                   exact="true"
-                  offset={-80}
+                  offset={-100}
                 >
                   Why Meditation
                 </NavLink>
@@ -81,7 +81,7 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   to="id3"
                   exact="true"
-                  offset={-80}
+                  offset={-100}
                 >
                   Learn More
                 </NavLink>

@@ -7,8 +7,8 @@ export const HeroContainer = styled.div`
   background: rgb(126, 136, 70);
   background: linear-gradient(
     180deg,
-    rgba(126, 136, 70) 50%,
-    rgba(242, 233, 210, 1) 50%
+    rgba(126, 136, 70) 0%,
+    rgba(242, 233, 210, 1) 100%
   );
   display: flex;
   justify-content: center;
