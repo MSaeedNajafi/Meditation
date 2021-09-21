@@ -16,6 +16,7 @@ import {
   NavLogoLink,
   Emoji,
   Atag,
+  TopNav,
 } from "./NavbarElements";
 import emo from "../../images/2724241120.png";
 
@@ -41,6 +42,7 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
+        <TopNav>dsda</TopNav>
         <Nav scrollNav={scrollNav}>
           <NavBarCotainer>
             <NavLogoLink to="/" onClick={toggleHome}>

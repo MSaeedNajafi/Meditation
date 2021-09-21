@@ -10,7 +10,7 @@ export const HomeObjOne = {
   topTitle: "",
   title: "What is Mediatation?",
   decsription:
-    "Originally, the word “meditate” actually meant to think deeply about something. However, when eastern contemplative practices were “imported” to Western culture, this is the term that was used to define them, for lack of a better word. Nowadays meditation refers more to the exercise of focusing attention than to reflecting deeply. Meditation is a mental exercise that involves relaxation, focus, and awareness. Meditation is to the mind what physical exercise is to the body. The practice is usually done individually, in a still, seated position and with eyes closed.",
+    "Originally, the word “meditate” meant to think deeply about something. However, when eastern contemplative practices were “imported” to Western culture, this is the term that was used to define them, for lack of a better word. Nowadays meditation refers more to the exercise of focusing attention than to reflecting deeply. Meditation is a mental exercise that involves relaxation, focus, and awareness. Meditation is to the mind what physical exercise is to the body. The practice is usually done individually, in a still, seated position and with eyes closed.",
   buttonLabel: "Why to Meditate?",
   imgStart: false,
   img: img1,

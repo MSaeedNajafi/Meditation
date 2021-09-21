@@ -4,9 +4,11 @@ import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
 import COL from "../Colors";
 import img from "../../images/bg images/bg3.jpg";
-//background: ${({ scrollNav }) =>   scrollNav ? COL.navBackgroundColor : COL.navBackgroundColor};
+
 export const Nav = styled.nav`
   background: ${COL.navBackgroundColor};
+  //background: ${({ scrollNav }) =>
+    scrollNav ? COL.navBackgroundColor : COL.navBackgroundColor};
   height: 100px;
   display: flex;
   justify-content: center;
@@ -58,6 +60,20 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: ${COL.iconColro};
+  }
+`;
+
+export const TopNav = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  background: ${COL.navBackgroundColor};
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  z-index: 10;
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
   }
 `;
 

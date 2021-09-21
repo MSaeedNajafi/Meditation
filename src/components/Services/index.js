@@ -46,7 +46,7 @@ const ServicesElements = () => {
           <ServicesCard>
             <ServicesH2>Concentration</ServicesH2>
             <ServicesIcon src={img1} />
-            <Divider className={classes.devider} />
+            {/* <Divider className={classes.devider} /> */}
             <ServicesP>
               focusing attention on a single object, internal or external
               (focused attention meditation)
@@ -55,7 +55,7 @@ const ServicesElements = () => {
           <ServicesCard>
             <ServicesH2>Observation</ServicesH2>
             <ServicesIcon src={img2} />
-            <Divider className={classes.devider} />
+            {/* <Divider className={classes.devider} /> */}
             <ServicesP>
               paying attention to whatever is predominant in your experience in
               the present moment
@@ -66,7 +66,7 @@ const ServicesElements = () => {
           <ServicesCard>
             <ServicesH2>Awareness</ServicesH2>
             <ServicesIcon src={img3} />
-            <Divider className={classes.devider} />
+            {/* <Divider className={classes.devider} /> */}
             <ServicesP>
               allowing awareness to remain present, undistracted and not engaged
               with either focusing or observing
