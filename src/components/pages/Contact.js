@@ -5,7 +5,7 @@ import ScrollToTop from "../ScrollToTop";
 import Sidebar from "../SideBar";
 import Contact from "../Contact";
 
-function SigninPage() {
+function ContactMe() {
   return (
     <>
       {/* <Sidebar />
@@ -17,4 +17,4 @@ function SigninPage() {
   );
 }
 
-export default SigninPage;
+export default ContactMe;

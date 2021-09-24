@@ -10,7 +10,9 @@ import {
   Icon,
   FormInput,
   Text,
+  FormP,
   FormInputTextArea,
+  TextArea,
 } from "./ContactElements";
 import { send } from "emailjs-com";
 
@@ -43,7 +45,11 @@ const ContactUs = () => {
           <Icon to="/">Meditation Fauzia</Icon>
           <FormCotent>
             <Form action="#" onSubmit={onSubmit}>
-              <FormH1>Contact Us</FormH1>
+              <FormH1>Contact Me</FormH1>
+              <TextArea>
+                <Text>E-mail: fsucces30@hotmail.com</Text>
+                <Text>Tele: 06 11 07 84 03</Text>
+              </TextArea>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput
                 type="email"

@@ -116,7 +116,7 @@ export const NavLogoLink = styled(LinkS)`
   font-size: 30px;
   align-items: center;
   // margin-left: 24px;
-  // font-weight: bold;
+  font-weight: bold;
   text-decoration: none;
   // text-decoration: underline;
 
@@ -127,6 +127,21 @@ export const NavLogoLink = styled(LinkS)`
 `;
 
 export const NavLink = styled(LinkS)`
+  color: ${COL.navLinkTextColor};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  // font-weight: 600;
+  &.active {
+    border-bottom: 3px solid ${COL.activeColor};
+  }
+`;
+
+export const NavLinkTo = styled(LinkR)`
   color: ${COL.navLinkTextColor};
   display: flex;
   align-items: center;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import COL from "../Colors";
+import img from "../../images/bg/bg1.jpg";
 
 export const Container = styled.div`
   min-height: 800px;
@@ -13,12 +14,16 @@ export const Container = styled.div`
   overflow: hidden;
   // position: relative;
   // z-index: 1;
-
-  background: linear-gradient(
-    180deg,
-    rgba(126, 136, 70, 1) 0%,
-    rgba(255, 218, 107, 1) 100%
-  );
+  background-image: url(${img});
+  width: 100%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  // background-repeat: no-repeat;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(126, 136, 70, 1) 0%,
+  //   rgba(255, 218, 107, 1) 100%
+  // );
 `;
 
 export const FormWrap = styled.div`
@@ -37,7 +42,7 @@ export const Icon = styled(Link)`
   margin-top: 32px;
   text-decoration: none;
   color: ${COL.signinIconColor};
-  // font-weight: 700;
+  font-weight: bold;
   font-size: 32px;
 
   @media screen and (max-width: 400px) {
@@ -65,7 +70,7 @@ export const Form = styled.form`
   z-index: 1;
   display: grid;
   margin: 0 auto;
-  padding: 80px 32px;
+  padding: 40px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
@@ -80,7 +85,17 @@ export const FormH1 = styled.h1`
   color: ${COL.formH1Color};
   font-weight: 400;
   text-align: center;
-  padding: 18px;
+  // padding: 18px;
+  // margin-top: -50px;
+`;
+
+export const FormP = styled.h1`
+  // margin-bottom: 8px;
+  font-size: 14px;
+  color: ${COL.formH1Color};
+  font-weight: 400;
+  text-align: center;
+  // padding: 18px;
   // margin-top: -50px;
 `;
 
@@ -105,13 +120,23 @@ export const FormButton = styled.button`
   color: ${COL.formBtnTextColor};
   font-size: 20px;
   cursor: pointer;
+  font-weight: bold;
 `;
 
 export const Text = styled.span`
   text-align: center;
-  margin-top: 24px;
+  // margin-top: 24px;
   color: ${COL.formSpanColor};
   font-size: 14px;
+  padding: 10px;
+`;
+
+export const TextArea = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 `;
 
 export const FormInputTextArea = styled.textarea`

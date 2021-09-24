@@ -17,6 +17,7 @@ import {
   Emoji,
   Atag,
   TopNav,
+  NavLinkTo,
 } from "./NavbarElements";
 import emo from "../../images/2724241120.png";
 
@@ -42,7 +43,7 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
-        <TopNav>dsda</TopNav>
+        {/* <TopNav>dsda</TopNav> */}
         <Nav scrollNav={scrollNav}>
           <NavBarCotainer>
             <NavLogoLink to="/" onClick={toggleHome}>
@@ -52,6 +53,9 @@ const Navbar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
+              <NavItem>
+                <NavLinkTo to="/about">About Me</NavLinkTo>
+              </NavItem>
               <NavItem>
                 <NavLink
                   to="about"
@@ -73,7 +77,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  Why Meditation
+                  Why
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -85,7 +89,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  Learn More
+                  More
                 </NavLink>
               </NavItem>
             </NavMenu>
