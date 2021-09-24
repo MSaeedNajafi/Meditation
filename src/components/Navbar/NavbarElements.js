@@ -7,6 +7,8 @@ import img from "../../images/bg images/bg3.jpg";
 
 export const Nav = styled.nav`
   background: ${COL.navBackgroundColor};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 1px 3px rgba(0, 0, 0, 0.9)" : ""};
   //background: ${({ scrollNav }) =>
     scrollNav ? COL.navBackgroundColor : COL.navBackgroundColor};
   height: 100px;
