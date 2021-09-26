@@ -83,9 +83,9 @@ export const About = styled.div`
 
 export const AboutH1 = styled.h1`
   // margin-bottom: 8px;
-  font-size: 20px;
+  font-size: 24px;
   color: ${COL.formH1Color};
-  font-weight: 400;
+  font-weight: bold;
   text-align: center;
   // padding: 18px;
   // margin-top: -50px;
@@ -96,7 +96,7 @@ export const Text = styled.span`
   text-align: justify;
   // margin-top: 24px;
   color: ${COL.formSpanColor};
-  font-size: 14px;
+  font-size: 20px;
   padding: 5px;
 `;
 

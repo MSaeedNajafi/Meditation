@@ -84,7 +84,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-szie: 18px;
+  font-size: 20px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? COL.descSecondary : COL.descPrimary)};
 `;

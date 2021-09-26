@@ -52,7 +52,7 @@ const MeditateElements = () => {
         <MeditateWrapper>
           <MeditateCard>
             <MeditateIcon src={Icon1} />
-            <MeditateH2>1. Take a sit</MeditateH2>
+            <MeditateH2>1. Take a seat</MeditateH2>
             <MeditateP>
               You can sit in a chair with your feet on the floor, make sure you
               are in a comfortable position that you can stay in for a while.

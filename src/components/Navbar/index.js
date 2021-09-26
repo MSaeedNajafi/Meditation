@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  Mediatation
+                  Meditation
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -102,7 +102,7 @@ const Navbar = ({ toggle }) => {
                 }}
                 to="/contact"
               >
-                Contact Us
+                Contact Me
               </NavBtnLink>
             </NavBtn>
           </NavBarCotainer>

@@ -48,8 +48,7 @@ const ServicesElements = () => {
             <ServicesIcon src={img1} />
             {/* <Divider className={classes.devider} /> */}
             <ServicesP>
-              focusing attention on a single object, internal or external
-              (focused attention meditation)
+              Focus attention on a single object, internal or external
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
@@ -57,8 +56,8 @@ const ServicesElements = () => {
             <ServicesIcon src={img2} />
             {/* <Divider className={classes.devider} /> */}
             <ServicesP>
-              paying attention to whatever is predominant in your experience in
-              the present moment
+              Pay attention to whatever is predominant in your experience in the
+              present moment
               {/** , without allowing the attention to get
               stuck on any particular thing (open monitoring meditation) */}
             </ServicesP>
@@ -68,7 +67,7 @@ const ServicesElements = () => {
             <ServicesIcon src={img3} />
             {/* <Divider className={classes.devider} /> */}
             <ServicesP>
-              allowing awareness to remain present, undistracted and not engaged
+              Allow awareness to remain present, undistracted and not engaged
               with either focusing or observing
             </ServicesP>
           </ServicesCard>
