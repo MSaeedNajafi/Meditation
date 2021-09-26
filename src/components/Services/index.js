@@ -13,7 +13,7 @@ import Icon2 from "../../images/svg-5.svg";
 import Icon3 from "../../images/svg-6.svg";
 import img1 from "../../images/Slider/3.jpg";
 import img2 from "../../images/Slider/2.jpg";
-import img3 from "../../images/Slider/1.jpg";
+import img3 from "../../images/bg/bg1.jpg";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";

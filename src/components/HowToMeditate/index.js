@@ -45,7 +45,7 @@ const MeditateElements = () => {
       <MeditateContainer id="Meditate">
         <MeditateH1>How to meditate?</MeditateH1>
         <MeditateDesc>
-          Find place to sit that feels calm and quiet to you.
+          Find A place to sit that feels calm and quiet to you.
         </MeditateDesc>
         <Divider className={classes.root} />
 
@@ -54,8 +54,8 @@ const MeditateElements = () => {
             <MeditateIcon src={Icon1} />
             <MeditateH2>1. Take a sit</MeditateH2>
             <MeditateP>
-              focusing attention on a single object, internal or external
-              (focused attention meditation)
+              You can sit in a chair with your feet on the floor, make sure you
+              are in a comfortable position that you can stay in for a while.
             </MeditateP>
           </MeditateCard>
           <MeditateCard>
@@ -68,18 +68,18 @@ const MeditateElements = () => {
           </MeditateCard>
           <MeditateCard>
             <MeditateIcon src={Icon3} />
-            <MeditateH2>3. Notice your body</MeditateH2>
+            <MeditateH2>3. Feel your breath</MeditateH2>
             <MeditateP>
-              You can sit in a chair with your feet on the floor, make sure you
-              are in a comfortable position that you can stay in for a while.
+              Follow the sensation of your breath as it goes in and as it goes
+              out.
             </MeditateP>
           </MeditateCard>
           <MeditateCard>
             <MeditateIcon src={Icon4} />
-            <MeditateH2>4. Feel your breath</MeditateH2>
+            <MeditateH2>4. Notice the body</MeditateH2>
             <MeditateP>
-              Follow the sensation of your breath as it goes in and as it goes
-              out.
+              Feel the feet on the floor, be aware of sensations, lets the
+              thoughts come and go as they will.
             </MeditateP>
           </MeditateCard>
           <MeditateCard>
@@ -94,9 +94,9 @@ const MeditateElements = () => {
             <MeditateIcon src={Icon6} />
             <MeditateH2>6. Close with kindness</MeditateH2>
             <MeditateP>
-              When you’re ready, open your eyrs. Take a moment and notice any
-              sounds in the environment. Notice how your body feels and on your
-              thoughts and emotions.
+              When you’re ready, open your eyes. Notice how your body feels.
+              Notice your thoughts and emotions. Thank yourself for allowing
+              awareness into your life.
             </MeditateP>
           </MeditateCard>
         </MeditateWrapper>
@@ -105,7 +105,7 @@ const MeditateElements = () => {
           Meditation is no more complicated than what is described above. It is
           that simple … and that challenging. It’s also powerful and worth it.
           The key is to commit to sit even if it is for a few minutes a day and
-          then build up from there.
+          build up from there.
         </MeditateBottomDesc>
       </MeditateContainer>
     </>

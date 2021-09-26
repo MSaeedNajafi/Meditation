@@ -13,7 +13,6 @@ import {
 } from "./HeroElements";
 import Video from "../../video/video.mp4";
 import { Button } from "../ButtonElemts";
-import rlogo from "../../images/rlogo.png";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);

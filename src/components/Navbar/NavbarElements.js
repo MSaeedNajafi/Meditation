@@ -113,7 +113,8 @@ export const NavItem = styled.li`
 export const NavLogoLink = styled(LinkS)`
   color: ${COL.logoTextColor};
   justify-self: flex-start;
-  display: flex;
+  // display: flex;
+  align-self: center;
   cursor: pointer;
   font-size: 30px;
   align-items: center;
@@ -212,5 +213,14 @@ export const Atag = styled.a`
 
   &.active {
     border-bottom: 3px solid ${COL.activeColor};
+  }
+`;
+
+export const SpanElem = styled.span`
+  font-size: 14px;
+  padding-left: 5;
+  padding-right: 5;
+  @media screen and (max-width: 450px) {
+    display: none;
   }
 `;

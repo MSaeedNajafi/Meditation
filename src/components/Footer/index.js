@@ -69,7 +69,7 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo onClick={toggleHome} to="/">
-                Meditation Fauzia
+                Meditation <span style={{ fontSize: 14 }}> with</span> Fauzia
               </SocialLogo>
               <WebsiteRights>
                 Saeed Najafi © {new Date().getFullYear()} All rights reserved.

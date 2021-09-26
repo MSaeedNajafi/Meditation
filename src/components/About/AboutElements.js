@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import COL from "../Colors";
-import img from "../../images/bg/bg2.jpg";
+import img from "../../images/bg/bg3.jpg";
 
 export const Container = styled.div`
   min-height: 800px;
-  position: fixed;
+  // position: fixed;
+  padding-bottom: 50px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -47,8 +48,8 @@ export const Icon = styled(Link)`
   font-size: 32px;
 
   @media screen and (max-width: 400px) {
-    margin-left: 16px;
-    margin-top: 8px;
+    margin-left: 0;
+    text-align: center;
   }
 `;
 
@@ -132,4 +133,11 @@ export const AboutButton = styled(Link)`
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+`;
+
+export const SpanElem = styled.span`
+  font-size: 14px;
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 `;

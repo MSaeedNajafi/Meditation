@@ -46,8 +46,8 @@ export const Icon = styled(Link)`
   font-size: 32px;
 
   @media screen and (max-width: 400px) {
-    margin-left: 16px;
-    margin-top: 8px;
+    margin-left: 0;
+    text-align: center;
   }
 `;
 
@@ -75,7 +75,7 @@ export const Form = styled.form`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
   @media screen and (max-width: 400px) {
-    padding: 32px 32px;
+    padding: 84px 32px;
   }
 `;
 
@@ -137,6 +137,9 @@ export const TextArea = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 10px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const FormInputTextArea = styled.textarea`
@@ -147,5 +150,12 @@ export const FormInputTextArea = styled.textarea`
   height: 10rem;
   @media screen and (max-width: 480px) {
     height: 6rem;
+  }
+`;
+
+export const SpanElem = styled.span`
+  font-size: 14px;
+  @media screen and (max-width: 400px) {
+    display: none;
   }
 `;

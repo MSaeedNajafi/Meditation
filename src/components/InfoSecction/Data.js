@@ -10,7 +10,7 @@ export const HomeObjOne = {
   topTitle: "",
   title: "What is Mediatation?",
   decsription:
-    "Originally, the word “meditate” meant to think deeply about something. However, when eastern contemplative practices were “imported” to Western culture, this is the term that was used to define them, for lack of a better word. Nowadays meditation refers more to the exercise of focusing attention than to reflecting deeply. Meditation is a mental exercise that involves relaxation, focus, and awareness. Meditation is to the mind what physical exercise is to the body. The practice is usually done individually, in a still, seated position and with eyes closed.",
+    "Originally, the word “meditate” meant to think deeply about something. However, when eastern contemplative practices were “imported” to western culture, this is the term that was used to define them, for lack of a better word. Nowadays meditation refers more to the exercise of focusing attention than to reflecting deeply. Meditation is a mental exercise that involves relaxation, focus, and awareness. Meditation is to the mind what physical exercise is to the body. The practice is usually done individually, in a still, seated position and with eyes closed.",
   buttonLabel: "Why to Meditate?",
   imgStart: false,
   img: img1,
@@ -29,7 +29,7 @@ export const HomeObjTwo = {
   topTitle: "",
   title: "Why Meditate? ",
   decsription:
-    "When we meditate, we inject far-reaching and long-lasting benefits into our lives: We lower our stress levels, we get toknow our pain, we connect, we improve our focus, and we are kinder to ourselves. We improve focus and reduce brain chatter. Sounds good right?",
+    "When we meditate, we inject far-reaching and long-lasting benefits into our lives. We increase awareness and reduce brain chatter. We lower our stress levels, we improve our focus, we get to know our pain and the healing process may begin. We connect and we are kinder to ourselves. Sounds good right? ",
   buttonLabel: "Learn More",
   imgStart: true,
   img: img7,
@@ -46,9 +46,9 @@ export const HomeObjThree = {
   lightText: false,
   lightTextDecs: true,
   topTitle: "",
-  title: "Learn more, start meditation and stick with it?",
+  title: "Learn more, start meditation and stick with it",
   decsription:
-    "I invite you to join me in a guided meditation session. You will be guided through a 45 minute meditation session. Follow the link to book a session online, either in a group or a private session. The session is for all ages and all experience levels. Need more information?",
+    "I invite you to join me in a guided meditation session. You will be guided through a 45 minute meditation. Follow the link to book online, either in a group or a private session. The session is for all ages and all experience levels. Need more information?",
   buttonLabel: "Back to Top",
   imgStart: false,
   img: img4,

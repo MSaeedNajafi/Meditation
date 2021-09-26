@@ -82,6 +82,9 @@ export const MeditateH1 = styled.h1`
     height: 2rem;
     font-size: 1rem;
   }
+  @media screen and (max-width: 380px) {
+    padding-top: 50px;
+  }
 `;
 
 export const MeditateH2 = styled.h2`
@@ -105,7 +108,7 @@ export const MeditateDesc = styled.p`
   @media screen and (max-width: 480px) {
     height: 2rem;
     font-size: 16px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 `;
 
@@ -118,7 +121,7 @@ export const MeditateBottomDesc = styled.p`
   @media screen and (max-width: 480px) {
     height: 2rem;
     font-size: 16px;
-    // margin-bottom: 150px;
+    margin-bottom: 250px;
   }
 `;
 

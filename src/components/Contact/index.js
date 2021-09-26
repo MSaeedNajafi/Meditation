@@ -13,6 +13,7 @@ import {
   FormP,
   FormInputTextArea,
   TextArea,
+  SpanElem,
 } from "./ContactElements";
 import { send } from "emailjs-com";
 
@@ -42,7 +43,9 @@ const ContactUs = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">Meditation Fauzia</Icon>
+          <Icon to="/">
+            Meditation <SpanElem> with</SpanElem> Fauzia
+          </Icon>
           <FormCotent>
             <Form action="#" onSubmit={onSubmit}>
               <FormH1>Contact Me</FormH1>

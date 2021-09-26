@@ -18,6 +18,7 @@ import {
   Atag,
   TopNav,
   NavLinkTo,
+  SpanElem,
 } from "./NavbarElements";
 import emo from "../../images/2724241120.png";
 
@@ -47,7 +48,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavBarCotainer>
             <NavLogoLink to="/" onClick={toggleHome}>
-              Meditation Fauzia
+              Meditation<SpanElem> with </SpanElem>Fauzia
             </NavLogoLink>
             <MobileIcon onClick={toggle}>
               <FaBars />

@@ -78,8 +78,8 @@ export const HeroH1 = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 16px;
-    margin-top: 50px;
+    font-size: 14px;
+    margin-top: 0;
   }
 `;
 
@@ -96,7 +96,7 @@ export const HeroP = styled.p`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 18px;
+    font-size: 14px;
     margin-top: 0;
   }
 `;
