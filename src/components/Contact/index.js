@@ -51,7 +51,7 @@ const ContactUs = () => {
               <FormH1>Contact Me</FormH1>
               <TextArea>
                 <Text>E-mail: fsucces30@hotmail.com</Text>
-                <Text>Tele: 06 11 07 84 03</Text>
+                <Text>Telefoon: 06 11 07 84 03</Text>
               </TextArea>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput

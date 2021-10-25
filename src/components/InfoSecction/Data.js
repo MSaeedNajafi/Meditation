@@ -1,4 +1,4 @@
-import img1 from "../../images/svg-1.svg";
+import img1 from "../../images/self/sitting.jpg";
 import img4 from "../../images/svg-17.svg";
 import img7 from "../../images/Slider/2.jpg";
 
@@ -23,8 +23,8 @@ export const HomeObjOne = {
 
 export const HomeObjTwo = {
   id: "id2",
-  lightBg: false,
-  lightText: false,
+  lightBg: true,
+  lightText: true,
   lightTextDecs: true,
   topTitle: "",
   title: "Why Meditate? ",
@@ -36,7 +36,7 @@ export const HomeObjTwo = {
   alt: "Bank",
   dark: true,
   primary: true,
-  darkText: true,
+  darkText: false,
   goto: "id3",
 };
 
@@ -46,10 +46,10 @@ export const HomeObjThree = {
   lightText: false,
   lightTextDecs: true,
   topTitle: "",
-  title: "Learn more, start meditation and stick with it",
+  title: "Start meditation and stick with it",
   decsription:
     "I invite you to join me in a guided meditation session. You will be guided through a 45 minute meditation. Follow the link to book online, either in a group or a private session. The session is for all ages and all experience levels. Need more information?",
-  buttonLabel: "Back to Top",
+  buttonLabel: "Contact Me",
   imgStart: false,
   img: img4,
   alt: "Mediatation",

@@ -13,7 +13,8 @@ import {
   AboutButton,
   SpanElem,
 } from "./AboutElements";
-import img from "../../images/bg/bg1.jpg";
+// import img from "../../images/bg/bg1.jpg";
+import img from "../../images/self/aboutme1.jpg";
 
 const AboutMe = () => {
   return (
@@ -25,38 +26,39 @@ const AboutMe = () => {
           </Icon>
           <AboutContent>
             <About>
-              <AboutH1>About Me</AboutH1>
+              <AboutH1>Even voorstellen</AboutH1>
               <TextArea>
                 <Text>
-                  Hello dear friend, my name is Fauzia and together with you I
-                  want to explore the light in ourselves. My intention is to
-                  offer you support while you develop this inner source of
-                  resilience and learn how to be confident, comfortable and
-                  balanced in career and personal relationships. Especially the
-                  relationship with yourself. From here you are able to enjoy
-                  the most fulfilled life.
+                  Hallo vriend(in), mijn naam is Fauzia en samen met jou wil ik
+                  de spirituele energie in ons gaan verkennen. Mijn intentie is
+                  om je te ondersteunen bij het ontwikkelen van je innerlijke
+                  bron. En je te helpen hoe je vol met zelfvertrouwen,
+                  comfortabel en gebalanceerd je relaties op persoonlijk en
+                  zakelijk gebied kan ontwikkelen.
                 </Text>
                 <ImgWrap>
                   <Img src={img} alt="me" />
                 </ImgWrap>
                 <Text>
-                  My spiritual journey started over 20 years ago with study of
-                  inherent wisdom and truth from great minds such as Plato,
-                  Marcus Aurelius, Buddha, Marsilio Ficino, James Allen and
-                  more, so that I could embody the universal message they all
-                  convey.
+                  Mijn spirituele reis begon 20 jaar geleden. Door de werken van
+                  filosofen zoals Plato, Marcus Aurelius, Boeddha, Marsilio
+                  Ficino, James Allen en andere wijsgeren te bestuderen heb ik
+                  de universele boodschap die ze allemaal doorgeven kunnen
+                  omarmen. Ik heb door het in praktijk brengen van meditatie,
+                  yoga en studie de puzzelstukjes van mijn leven kunnen
+                  samenvoegen.
                 </Text>
                 <Text>
-                  By practicing Yoga, meditation and study I stay connected to
-                  my inner self, and have pieced together my life’s puzzle and
-                  accept and appreciate the joyful person I am today. I believe
-                  passionately that meditation should be practiced in everyday
-                  life, everywhere around the world, because only by accepting
-                  and appreciating ourselves can we truly understand and help
-                  others.
+                  Het aanvaarden van wie ik ben maakt van mij een dankbaar mens
+                  die geleerd heeft het leven te leven zoals het is. Ik ben
+                  ervan overtuigd dat mediteren, voor iedereen, overal ter
+                  wereld, een geschenk kan zijn als men dit (dagelijks) in
+                  praktijk zou brengen. Omdat alleen door onszelf te accepteren
+                  en waarderen kunnen we begrip opbrengen voor iedereen en de
+                  wereld verder helpen.
                 </Text>
               </TextArea>
-              <AboutButton to="/contact">Want to know more?</AboutButton>
+              <AboutButton to="/contact">Wil je meer weten?</AboutButton>
             </About>
           </AboutContent>
         </AboutWrap>

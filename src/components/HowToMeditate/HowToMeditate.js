@@ -8,7 +8,8 @@ export const MeditateContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: ${COL.servicesBckColor};
+  // background: ${COL.servicesBckColor};
+  background: #f2e9d2;
   // background-image: url(${bg});
   // background-repeat: no-repeat;
   // background-size: auto 100%;
@@ -75,7 +76,7 @@ export const MeditateIcon = styled.img`
 
 export const MeditateH1 = styled.h1`
   font-size: 2.5rem;
-  color: ${COL.SerivesH1Color};
+  color: #010606;
   margin-bottom: 32px;
   text-transform: uppercase;
   @media screen and (max-width: 480px) {
@@ -101,7 +102,7 @@ export const MeditateP = styled.p`
 export const MeditateDesc = styled.p`
   font-size: 24px;
   text-transform: uppercase;
-  color: ${COL.SerivesH1Color};
+  color: ##010606;
   margin-bottom: 64px;
   padding: 0 68px;
 
@@ -114,14 +115,15 @@ export const MeditateDesc = styled.p`
 
 export const MeditateBottomDesc = styled.p`
   font-size: 24px;
-  color: ${COL.SerivesH1Color};
+  color: #010606;
   margin-top: 20px;
   padding: 0 68px;
-
+  width: 70%;
   @media screen and (max-width: 480px) {
     height: 2rem;
     font-size: 16px;
     margin-bottom: 250px;
+    width: 100%;
   }
 `;
 

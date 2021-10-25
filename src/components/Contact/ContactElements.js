@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import COL from "../Colors";
-import img from "../../images/bg/bg1.jpg";
+import img from "../../images/self/contactme.jpg";
 
 export const Container = styled.div`
   min-height: 800px;
@@ -16,9 +16,9 @@ export const Container = styled.div`
   // z-index: 1;
   background-image: url(${img});
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   background-color: rgba(0, 0, 0, 0.5);
-  // background-repeat: no-repeat;
+  background-repeat: no-repeat;
   // background: linear-gradient(
   //   180deg,
   //   rgba(126, 136, 70, 1) 0%,

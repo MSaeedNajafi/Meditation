@@ -35,7 +35,7 @@ export const NavBarCotainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 50px;
-  max-width: 1500px;
+  // max-width: 1500px;
 `;
 
 export const NavLogo = styled(LinkR)`

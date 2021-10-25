@@ -3,7 +3,9 @@ import COL from "../Colors";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: #f2e9d2;
+
+  // background: #f2e9d2;
+  background: ${({ lightBg }) => (lightBg ? "#7e8846;" : "#f2e9d2")};
 
   position: relative;
   z-index: 1;
