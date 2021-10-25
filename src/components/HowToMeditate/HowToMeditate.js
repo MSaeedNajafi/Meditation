@@ -78,6 +78,7 @@ export const MeditateH1 = styled.h1`
   font-size: 2.5rem;
   color: #010606;
   margin-bottom: 32px;
+  text-align: center;
   text-transform: uppercase;
   @media screen and (max-width: 480px) {
     height: 2rem;

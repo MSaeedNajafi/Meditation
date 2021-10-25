@@ -7,6 +7,7 @@ import { HomeObjOne, HomeObjTwo, HomeObjThree } from "../InfoSecction/Data";
 import ServicesElements from "../Services";
 import Footer from "../Footer";
 import MeditateElements from "../HowToMeditate";
+import Pricing from "../Pricing";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,8 @@ const Home = () => {
       <ServicesElements />
 
       <InfoSection {...HomeObjThree} />
+
+      <Pricing />
 
       <Footer />
     </>
