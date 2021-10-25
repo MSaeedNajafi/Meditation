@@ -3,7 +3,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import ScrollToTop from "../ScrollToTop";
 import Sidebar from "../SideBar";
-import Contact from "../Contact";
+import Contact from "../Contact/ContactSide";
 
 function ContactMe() {
   return (
