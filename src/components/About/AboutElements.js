@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import COL from "../Colors";
 import img from "../../images/bg/bg3.jpg";
+import me from "../../images/self/aboutme.png";
 
 export const Container = styled.div`
   min-height: 800px;
@@ -91,15 +92,6 @@ export const AboutH1 = styled.h1`
   // margin-top: -50px;
 `;
 
-export const Text = styled.span`
-  //   text-align: left;
-  text-align: justify;
-  // margin-top: 24px;
-  color: ${COL.formSpanColor};
-  font-size: 20px;
-  padding: 5px;
-`;
-
 export const TextArea = styled.div`
   height: 100%;
   display: flex;
@@ -112,10 +104,12 @@ export const ImgWrap = styled.div`
   //   max-width: 555px;
   height: 100%;
   padding: 5px;
+  float: left;
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  float: left;
+  width: 50%;
   margin: 0 0 10px 0;
   padding-right: 0;
   border-radius: 5px;
@@ -133,6 +127,7 @@ export const AboutButton = styled(Link)`
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+  // float: right;
 `;
 
 export const SpanElem = styled.span`
@@ -140,4 +135,31 @@ export const SpanElem = styled.span`
   @media screen and (max-width: 400px) {
     display: none;
   }
+`;
+
+export const TextOverImgWrapper = styled.div`
+  padding: 20px;
+`;
+
+export const Text = styled.span`
+  text-align: justify;
+  // margin-top: 24px;
+
+  color: ${COL.formSpanColor};
+  font-size: 20px;
+  padding: 5px;
+`;
+
+export const TextInWrapper = styled.p`
+  text-align: justify;
+  color: ${COL.formSpanColor};
+  font-size: 20px;
+`;
+
+export const ImgOverText = styled.img`
+  float: left;
+  width: 50%;
+  border-radius: 5px;
+  border: 10px solid rgb(255, 218, 107);
+  margin-right: 20px;
 `;

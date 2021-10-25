@@ -1,22 +1,26 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
-import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import StarIcon from "@mui/icons-material/StarBorder";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import { ServicesH1, ServicesP } from "../Services/ServicesElements";
+import { styled } from "@mui/material/styles";
 
-import { MeditateH1, MeditateBottomDesc } from "../HowToMeditate/HowToMeditate";
+const CssCard = styled(Card)({
+  "&:hover ": {
+    transform: "scale(1.05)",
+    transition: "all 0.2s ease-in-out",
+    cursor: "pointer",
+  },
+});
+
 const tiers = [
   {
     title: "Trial",
@@ -85,7 +89,7 @@ function PricingContent() {
                 sm={tier.title === "Enterprise" ? 12 : 6}
                 md={4}
               >
-                <Card>
+                <CssCard>
                   <CardHeader
                     title={tier.title}
                     subheader={tier.subheader}
@@ -155,12 +159,14 @@ function PricingContent() {
                         //   : "white",
                         cursor: "pointer",
                         fontWeight: "bold",
+                        fontSize: 16,
+                        textTransform: "capitalize",
                       }}
                     >
                       {tier.buttonText}
                     </Button>
                   </CardActions>
-                </Card>
+                </CssCard>
               </Grid>
             ))}
           </Grid>
