@@ -1,10 +1,7 @@
 import * as React from "react";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
@@ -21,20 +18,21 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
-    color: "white",
+    color: "#ffda6b",
   },
   "& .MuiInput-underline:after": {
-    borderBottomColor: "white",
+    borderBottomColor: "#ffda6b",
   },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
-      borderColor: "white",
-    },
-    "&:hover fieldset": {
       borderColor: "#ffda6b",
     },
-    "&.Mui-focused fieldset": {
+    "&:hover fieldset": {
       borderColor: "white",
+      borderRadius: 4,
+    },
+    "&.Mui-focused fieldset": {
+      borderColor: "#ffda6b",
     },
   },
 });
@@ -135,6 +133,7 @@ export default function ContactSide() {
               noValidate
               onSubmit={handleSubmit}
               sx={{ mt: 1 }}
+              // style={{ backgroundColor: "red" }}
             >
               <CssTextField
                 margin="normal"
@@ -144,6 +143,9 @@ export default function ContactSide() {
                 id="email"
                 autoComplete="email"
                 autoFocus
+                style={{
+                  backgroundColor: "grey",
+                }}
                 InputLabelProps={{
                   style: {
                     color: "white",
@@ -160,6 +162,9 @@ export default function ContactSide() {
                 type="text"
                 id="subject"
                 autoComplete="subject"
+                style={{
+                  backgroundColor: "grey",
+                }}
                 InputLabelProps={{
                   style: {
                     color: "white",
@@ -174,6 +179,9 @@ export default function ContactSide() {
                 label="Message"
                 multiline
                 rows={4}
+                style={{
+                  backgroundColor: "grey",
+                }}
                 InputLabelProps={{
                   style: {
                     color: "white",

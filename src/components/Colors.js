@@ -44,11 +44,12 @@ const COL = {
   ServicesCardBckColor: "#fff",
   SerivesH1Color: "#fff",
   //footer
-  footerContainerBckColor: "#7e8846",
-  footerLinkItemsColor: "#fff",
+  // footerContainerBckColor: "#7e8846",
+  footerContainerBckColor: "#f2e9d2",
+  footerLinkItemsColor: "#010606",
   FooterLinkOnHoverColor: "#ffda6b",
-  socialMediaIconColor: "#fff",
-  footerSocialMediaTextColor: "#fff",
+  socialMediaIconColor: "#010606",
+  footerSocialMediaTextColor: "#010606",
   //signin
   signinIconColor: "#fff",
   formBckGround: "#010101",
