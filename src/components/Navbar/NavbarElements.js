@@ -191,15 +191,15 @@ export const NavBtnLink = styled(LinkR)`
 `;
 
 export const Emoji = styled.img`
-  width: 50px;
-  height: 40px;
-  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
 
-  @media screen and (max-width: 768px) {
-    width: 35px;
-    height: 25px;
-    margin-right: 5px;
-  }
+  // @media screen and (max-width: 768px) {
+  //   width: 35px;
+  //   height: 25px;
+  //   margin-right: 5px;
+  // }
 `;
 
 export const Atag = styled.a`

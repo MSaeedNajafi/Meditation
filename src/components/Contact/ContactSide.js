@@ -43,12 +43,12 @@ function Copyright(props) {
       variant="body2"
       color="text.secondary"
       align="center"
+      style={{ color: "white" }}
       {...props}
     >
       {"Saeed Najafi © "}
-      <Link color="inherit">All rights reserved</Link>{" "}
       {new Date().getFullYear()}
-      {"."}
+      <Link color="inherit">All rights reserved</Link> {"."}
     </Typography>
   );
 }
@@ -113,7 +113,7 @@ export default function ContactSide() {
             <Divider variant="inset" component="li" />
             <Typography component="h1" variant="h5" style={{ color: "white" }}>
               <Chip
-                icon={<EmailIcon />}
+                icon={<EmailIcon style={{ color: "white" }} />}
                 label="E-mail: "
                 style={{ color: "white" }}
               />
@@ -121,7 +121,7 @@ export default function ContactSide() {
             </Typography>
             <Typography component="h1" variant="h5" style={{ color: "white" }}>
               <Chip
-                icon={<MdPhone />}
+                icon={<MdPhone style={{ color: "white" }} />}
                 label="Telefoon: "
                 style={{ color: "white" }}
               />
@@ -148,7 +148,7 @@ export default function ContactSide() {
                 }}
                 InputLabelProps={{
                   style: {
-                    color: "white",
+                    color: "#ffda6b",
                   },
                 }}
               />
@@ -167,7 +167,7 @@ export default function ContactSide() {
                 }}
                 InputLabelProps={{
                   style: {
-                    color: "white",
+                    color: "#ffda6b",
                   },
                 }}
               />
@@ -184,7 +184,7 @@ export default function ContactSide() {
                 }}
                 InputLabelProps={{
                   style: {
-                    color: "white",
+                    color: "#ffda6b",
                   },
                 }}
               />

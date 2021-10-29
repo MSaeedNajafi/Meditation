@@ -20,7 +20,8 @@ import {
   NavLinkTo,
   SpanElem,
 } from "./NavbarElements";
-import emo from "../../images/2724241120.png";
+import en from "../../images/flags/en.png";
+import nl from "../../images/flags/nl.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -104,6 +105,10 @@ const Navbar = ({ toggle }) => {
               >
                 Contact Me
               </NavBtnLink>
+              <div style={{ paddingLeft: 5 }}>
+                <Emoji src={nl} />
+                <Emoji src={en} />
+              </div>
             </NavBtn>
           </NavBarCotainer>
         </Nav>
