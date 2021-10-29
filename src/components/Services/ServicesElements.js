@@ -100,7 +100,7 @@ export const ServicesH2 = styled.h2`
 `;
 
 export const ServicesP = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   color: ${COL.SerivesH1Color};
 `;
