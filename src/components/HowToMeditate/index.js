@@ -19,7 +19,7 @@ import Icon5 from "../../images/svg-14.svg";
 import Icon6 from "../../images/svg-16.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
-
+import { useTranslation } from "react-i18next";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -39,11 +39,11 @@ const useStyles = makeStyles((theme) => ({
 
 const MeditateElements = () => {
   const classes = useStyles();
-
+  const [t, i18n] = useTranslation();
   return (
     <>
       <MeditateContainer id="Meditate">
-        <MeditateH1>How to meditate?</MeditateH1>
+        <MeditateH1>{t("howto")}</MeditateH1>
         <MeditateDesc>
           Find A place to sit that feels calm and quiet to you.
         </MeditateDesc>

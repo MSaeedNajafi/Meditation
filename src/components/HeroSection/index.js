@@ -13,9 +13,11 @@ import {
 } from "./HeroElements";
 import Video from "../../video/video.mp4";
 import { Button } from "../ButtonElemts";
+import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
+  const [t, i18n] = useTranslation();
 
   const onHover = () => {
     setHover(!hover);

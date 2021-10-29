@@ -15,9 +15,7 @@ import {
   ImgWrap,
   Img,
 } from "./InfoElements";
-
-import Table from "../Table";
-import InputSlider from "../Slider";
+import { useTranslation } from "react-i18next";
 
 const InfoSection = ({
   lightBg,
@@ -36,6 +34,7 @@ const InfoSection = ({
   dark2,
   goto,
 }) => {
+  const [t, i18n] = useTranslation();
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>

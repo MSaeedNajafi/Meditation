@@ -2,6 +2,7 @@ import react, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { IconContext } from "react-icons/lib";
 import { FaBars } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import {
   Nav,
   NavLink,
@@ -25,6 +26,7 @@ import nl from "../../images/flags/nl.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [t, i18n] = useTranslation();
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -106,8 +108,8 @@ const Navbar = ({ toggle }) => {
                 Contact Me
               </NavBtnLink>
               <div style={{ paddingLeft: 5 }}>
-                <Emoji src={nl} />
-                <Emoji src={en} />
+                <Emoji onClick={() => i18n.changeLanguage("nl")} src={nl} />
+                <Emoji onClick={() => i18n.changeLanguage("en")} src={en} />
               </div>
             </NavBtn>
           </NavBarCotainer>
