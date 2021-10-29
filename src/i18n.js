@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { useTranslation } from "react-i18next";
-// const server = "https://iamsaeed-1366.web.app/";
+const server = "https://meditationwithfuzia.web.app/";
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -18,6 +18,7 @@ i18n
   .init(
     {
       backend: {
+        // loadPath: server + "/locals/{{lng}}/{{ns}}",
         loadPath: "http://localhost:3000/locals/{{lng}}/{{ns}}",
         allowMultiLoading: false,
         crossDomain: true,
