@@ -163,3 +163,17 @@ export const ImgOverText = styled.img`
   border: 10px solid rgb(255, 218, 107);
   margin-right: 20px;
 `;
+
+export const Emoji = styled.img`
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  // margin-left: 15px;
+  float: right;
+
+  // @media screen and (max-width: 768px) {
+  //   width: 35px;
+  //   height: 25px;
+  //   margin-right: 5px;
+  // }
+`;
