@@ -17,7 +17,13 @@ const PageContent = () => {
           component="nav"
           aria-label="secondary mailbox folder"
           subheader={
-            <ListSubheader style={{ fontSize: 24, fontWeight: "bold" }}>
+            <ListSubheader
+              style={{
+                fontSize: 24,
+                fontWeight: "bold",
+                backgroundColor: "transparent",
+              }}
+            >
               {t("algemene")}
             </ListSubheader>
           }

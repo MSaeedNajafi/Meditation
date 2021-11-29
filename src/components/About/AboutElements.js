@@ -14,6 +14,7 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
+  padding-top: 100px;
   // position: relative;
   // z-index: 1;
   // background-repeat: no-repeat;

@@ -57,7 +57,8 @@ function PricingContent() {
       title: "Private Meditation session",
       subheader: "Online",
       price: "22.50",
-      description: ["30 minutes", "1 session", t("reiskosten")],
+      description: ["30 minutes", "1 session"],
+      extra: t("reiskosten"),
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
@@ -65,7 +66,8 @@ function PricingContent() {
       title: " Private Meditation session",
       subheader: "Online",
       price: "10.00",
-      description: ["45 minutes", "1 session", t("reiskosten")],
+      description: ["45 minutes", "1 session"],
+      extra: t("reiskosten"),
       buttonText: "Reserveren",
       buttonVariant: "contained",
     },
@@ -73,7 +75,8 @@ function PricingContent() {
       title: "Private Meditation session",
       subheader: "Online",
       price: "45.00",
-      description: ["60 minutes", "1 session", t("reiskosten")],
+      description: ["60 minutes", "1 session"],
+      extra: t("reiskosten"),
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
@@ -112,10 +115,15 @@ function PricingContent() {
                   <CardHeader
                     title={tier.title}
                     subheader={tier.subheader}
-                    titleTypographyProps={{ align: "center" }}
+                    titleTypographyProps={{
+                      align: "center",
+                      variant: "headline",
+                      fontWeight: "bold",
+                    }}
                     action={tier.title === "Pro" ? <StarIcon /> : null}
                     subheaderTypographyProps={{
                       align: "center",
+                      // fontSize: 20,
                     }}
                     sx={{
                       backgroundColor: (theme) =>
@@ -137,7 +145,7 @@ function PricingContent() {
                         component="h2"
                         variant="h3"
                         color="text.primary"
-                        style={{ fontSize: 30 }}
+                        style={{ fontSize: 20 }}
                       >
                         €{tier.price}
                       </Typography>
@@ -145,18 +153,31 @@ function PricingContent() {
                         /mo
                       </Typography> */}
                     </Box>
-                    <ul>
-                      {tier.description.map((line) => (
-                        <Typography
-                          component="li"
-                          variant="subtitle1"
-                          align="center"
-                          key={line}
-                        >
-                          {line}
-                        </Typography>
-                      ))}
-                    </ul>
+                    {/* <ul> */}
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        flexWrap: "nowrap",
+                        justifyContent: "center",
+                        alignItems: "stretch",
+                      }}
+                    >
+                      {tier.description.map(
+                        (line) => (
+                          // <Typography
+                          //   component="li"
+                          //   variant="subtitle1"
+                          //   align="center"
+                          //   key={line}
+                          // >
+                          <>{line + " "}</>
+                        )
+
+                        // </Typography>
+                      )}
+                    </div>
+                    {/* </ul> */}
                   </CardContent>
                   <CardActions>
                     <Button
@@ -223,7 +244,11 @@ function PricingContent() {
                   <CardHeader
                     title={tier.title}
                     subheader={tier.subheader}
-                    titleTypographyProps={{ align: "center" }}
+                    titleTypographyProps={{
+                      align: "center",
+                      variant: "headline",
+                      fontWeight: "bold",
+                    }}
                     action={tier.title === "Pro" ? <StarIcon /> : null}
                     subheaderTypographyProps={{
                       align: "center",
@@ -248,7 +273,7 @@ function PricingContent() {
                         component="h2"
                         variant="h3"
                         color="text.primary"
-                        style={{ fontSize: 30 }}
+                        style={{ fontSize: 20 }}
                       >
                         €{tier.price}
                       </Typography>
@@ -256,18 +281,39 @@ function PricingContent() {
                         /mo
                       </Typography> */}
                     </Box>
-                    <ul>
-                      {tier.description.map((line) => (
-                        <Typography
-                          component="li"
-                          variant="subtitle1"
-                          align="center"
-                          key={line}
-                        >
-                          {line}
-                        </Typography>
-                      ))}
-                    </ul>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        flexWrap: "nowrap",
+                        justifyContent: "center",
+                        alignItems: "stretch",
+                      }}
+                    >
+                      {tier.description.map(
+                        (line) => (
+                          // <Typography
+                          //   component="li"
+                          //   variant="subtitle1"
+                          //   align="center"
+                          //   key={line}
+                          // >
+                          <>{line + " "}</>
+                        )
+                        // </Typography>
+                      )}
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        flexWrap: "nowrap",
+                        justifyContent: "center",
+                        alignItems: "stretch",
+                      }}
+                    >
+                      {tier.extra}
+                    </div>
                   </CardContent>
                   <CardActions>
                     <Button

@@ -46,6 +46,11 @@ export const HeroBg = styled.div`
   overflow: hidden;
   padding-left: 50px;
   padding-right: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 
 export const VideoBg = styled.video`
@@ -73,8 +78,8 @@ export const HeroH1 = styled.h1`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    margin-top: 75px;
-    font-size: 30px;
+    // margin-top: 75px;
+    font-size: 20px;
   }
 
   @media screen and (max-width: 480px) {

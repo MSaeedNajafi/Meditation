@@ -3,6 +3,7 @@ import Navbar from "../Navbar";
 import Sidebar from "../SideBar";
 // import PageContentainer from "../contents/index";
 import PageContentainer from "../Contents/index";
+import Navbar2 from "../Navbar/Navbar2";
 
 const Page2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const Page2 = () => {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar2 toggle={toggle} />
       <PageContentainer />
       {/* <div
         style={{

@@ -42,7 +42,7 @@ const MeditateElements = () => {
   const [t, i18n] = useTranslation();
   return (
     <>
-      <MeditateContainer id="Meditate">
+      <MeditateContainer id="how">
         <MeditateH1>{t("howto")}</MeditateH1>
         <MeditateDesc>{t("finda")}</MeditateDesc>
         {/* <Divider className={classes.root} /> */}

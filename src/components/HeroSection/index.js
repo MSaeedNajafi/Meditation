@@ -32,13 +32,13 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Wanneer wij ons bezighouden met meditatie,
+          {t("videoText1")}
           {/* <span style={{ color: "#00c389" }}> */}
           {/* <RlogoWrap src={rlogo}></RlogoWrap>R */}
           {/* </span> */}
         </HeroH1>
         {/* <HeroP>You always remain in control of your funds.</HeroP> */}
-        <HeroH1>Zuiveren wij onze geest en vergaren we wijsheid.</HeroH1>
+        <HeroH1>{t("videoText2")}.</HeroH1>
 
         <HeroBtnWrapper>
           <Button
