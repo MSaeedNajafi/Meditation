@@ -9,12 +9,15 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import img from "../../images/self/contactme.jpg";
 import Divider from "@mui/material/Divider";
 import { Icon, SpanElem } from "../About/AboutElements";
 import MdPhone from "@mui/icons-material/Phone";
 import Chip from "@mui/material/Chip";
 import EmailIcon from "@mui/icons-material/Email";
+
+// import img from "../../images/self/contactme.jpg";
+
+import img from "../../images/self/sitting.jpg";
 
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
@@ -76,7 +79,7 @@ export default function ContactSide() {
           item
           xs={false}
           sm={4}
-          md={7}
+          md={4}
           sx={{
             backgroundImage: `url(${img})`,
             backgroundRepeat: "no-repeat",
@@ -92,9 +95,9 @@ export default function ContactSide() {
           item
           xs={12}
           sm={8}
-          md={5}
+          md={8}
           component={Paper}
-          style={{ backgroundColor: "black" }}
+          style={{ backgroundColor: "#7e8846" }}
           elevation={6}
           square
         >

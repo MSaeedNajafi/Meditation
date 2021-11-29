@@ -10,7 +10,9 @@ import ServicesElements from "../Services";
 import Footer from "../Footer";
 import MeditateElements from "../HowToMeditate";
 import Pricing from "../Pricing";
-import img1 from "../../images/self/sitting.jpg";
+// import img1 from "../../images/self/sitting.jpg";
+import img1 from "../../images/self/newme.jpeg";
+
 import img4 from "../../images/svg-17.svg";
 import img7 from "../../images/Slider/2.jpg";
 
@@ -83,8 +85,8 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...HomeObjOne} />
       <InfoSection {...HomeObjTwo} />
-      <MeditateElements />
       <ServicesElements />
+      <MeditateElements />
 
       <InfoSection {...HomeObjThree} />
 

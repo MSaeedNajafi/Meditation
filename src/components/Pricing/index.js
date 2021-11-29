@@ -10,7 +10,11 @@ import StarIcon from "@mui/icons-material/StarBorder";
 import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
-import { ServicesH1, ServicesP } from "../Services/ServicesElements";
+import {
+  ServicesH1,
+  ServicesP,
+  ServicesP1,
+} from "../Services/ServicesElements";
 import { styled } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
@@ -51,6 +55,7 @@ function PricingContent() {
   const tiers2 = [
     {
       title: "Private Meditation session",
+      subheader: "Online",
       price: "22.50",
       description: ["30 minutes", "1 session", t("reiskosten")],
       buttonText: "Reserveren",
@@ -66,6 +71,7 @@ function PricingContent() {
     },
     {
       title: "Private Meditation session",
+      subheader: "Online",
       price: "45.00",
       description: ["60 minutes", "1 session", t("reiskosten")],
       buttonText: "Reserveren",
@@ -74,7 +80,7 @@ function PricingContent() {
   ];
   return (
     <>
-      <div style={{ backgroundColor: "#7e8846" }}>
+      <div style={{ backgroundColor: "#7e8846" }} id="pricing">
         <GlobalStyles
           styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
         />
@@ -131,12 +137,13 @@ function PricingContent() {
                         component="h2"
                         variant="h3"
                         color="text.primary"
+                        style={{ fontSize: 30 }}
                       >
                         €{tier.price}
                       </Typography>
-                      <Typography variant="h6" color="text.secondary">
+                      {/* <Typography variant="h6" color="text.secondary">
                         /mo
-                      </Typography>
+                      </Typography> */}
                     </Box>
                     <ul>
                       {tier.description.map((line) => (
@@ -197,7 +204,8 @@ function PricingContent() {
           component="main"
           sx={{ pt: 8, pb: 6 }}
         >
-          <ServicesP>{t("privatetxt")}</ServicesP>
+          <ServicesH1>{t("privatess")}</ServicesH1>
+          <ServicesP>{t("privatesstxt")}</ServicesP>
         </Container>
         {/* End hero unit */}
         <Container maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
@@ -240,12 +248,13 @@ function PricingContent() {
                         component="h2"
                         variant="h3"
                         color="text.primary"
+                        style={{ fontSize: 30 }}
                       >
                         €{tier.price}
                       </Typography>
-                      <Typography variant="h6" color="text.secondary">
+                      {/* <Typography variant="h6" color="text.secondary">
                         /mo
-                      </Typography>
+                      </Typography> */}
                     </Box>
                     <ul>
                       {tier.description.map((line) => (
@@ -294,7 +303,7 @@ function PricingContent() {
           </Grid>
         </Container>
         <div style={{ padding: 20 }}>
-          <ServicesP>{t("Corporate")}</ServicesP>
+          <ServicesP1>{t("Corporate")}</ServicesP1>
         </div>
       </div>
     </>

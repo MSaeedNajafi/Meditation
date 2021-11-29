@@ -32,6 +32,52 @@ const Footer = () => {
     <>
       <FooterContainer>
         <FooterWrap>
+          <SocialMedia>
+            <SocialMediaWrap>
+              <SocialLogo onClick={toggleHome} to="/">
+                Meditation <span style={{ fontSize: 14 }}> with</span> Fauzia
+              </SocialLogo>
+              {/* <FooterLinksItems>
+                <FooterLinkTitle>About US</FooterLinkTitle>
+                <FooterLink to="/signin">Testomonials</FooterLink>
+                <FooterLink to="/signin">Careers</FooterLink>
+                <FooterLink to="/signin">Inverstors</FooterLink>
+                <FooterLink to="/signin">Terms of services</FooterLink>
+              </FooterLinksItems> */}
+              <WebsiteRights>
+                Saeed Najafi © {new Date().getFullYear()} All rights reserved.
+              </WebsiteRights>
+              <FooterLinksItems>
+                <FooterLinkTitle>More</FooterLinkTitle>
+                {/* <FooterLink to="/signin">Testomonials</FooterLink>
+                <FooterLink to="/signin">Careers</FooterLink>
+                <FooterLink to="/signin">Inverstors</FooterLink> */}
+                <FooterLink to="/termsandconditions">
+                  Terms of services
+                </FooterLink>
+              </FooterLinksItems>
+              {/* </FooterLinksContainer> */}
+              {/* <SocialIcons>
+                <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+                  <FaFacebook />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                  <FaInstagram />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+                  <FaYoutube />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+                  <FaTwitter />
+                </SocialIconLink>
+                <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+                  <FaLinkedin />
+                </SocialIconLink>
+              </SocialIcons> */}
+            </SocialMediaWrap>
+            {/* <FooterLinksContainer> */}
+          </SocialMedia>
+
           {/* <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinksItems>
@@ -66,33 +112,6 @@ const Footer = () => {
               </FooterLinksItems>
             </FooterLinksWrapper>
           </FooterLinksContainer> */}
-          <SocialMedia>
-            <SocialMediaWrap>
-              <SocialLogo onClick={toggleHome} to="/">
-                Meditation <span style={{ fontSize: 14 }}> with</span> Fauzia
-              </SocialLogo>
-              <WebsiteRights>
-                Saeed Najafi © {new Date().getFullYear()} All rights reserved.
-              </WebsiteRights>
-              {/* <SocialIcons>
-                <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                  <FaFacebook />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                  <FaInstagram />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Youtube">
-                  <FaYoutube />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                  <FaTwitter />
-                </SocialIconLink>
-                <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
-                  <FaLinkedin />
-                </SocialIconLink>
-              </SocialIcons> */}
-            </SocialMediaWrap>
-          </SocialMedia>
         </FooterWrap>
       </FooterContainer>
     </>

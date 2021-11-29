@@ -32,14 +32,13 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>
-          Meditation with Fauzia
+          Wanneer wij ons bezighouden met meditatie,
           {/* <span style={{ color: "#00c389" }}> */}
           {/* <RlogoWrap src={rlogo}></RlogoWrap>R */}
           {/* </span> */}
         </HeroH1>
         {/* <HeroP>You always remain in control of your funds.</HeroP> */}
-        <HeroP>Really really Helpful.</HeroP>
-        <HeroP>100% ontime</HeroP>
+        <HeroH1>Zuiveren wij onze geest en vergaren we wijsheid.</HeroH1>
 
         <HeroBtnWrapper>
           <Button

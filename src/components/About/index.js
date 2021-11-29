@@ -21,6 +21,7 @@ import {
 } from "./AboutElements";
 // import img from "../../images/bg/bg1.jpg";
 import img from "../../images/self/aboutme.png";
+import ChangLanguage from "../Navbar/ChangLanguage";
 import en from "../../images/flags/en.png";
 import nl from "../../images/flags/nl.png";
 
@@ -33,8 +34,9 @@ const AboutMe = () => {
         <AboutWrap>
           <Icon to="/">
             Meditation <SpanElem> with</SpanElem> Fauzia
-            <Emoji onClick={() => i18n.changeLanguage("nl")} src={nl} />
-            <Emoji onClick={() => i18n.changeLanguage("en")} src={en} />
+            {/* <Emoji onClick={() => i18n.changeLanguage("nl")} src={nl} />
+            <Emoji onClick={() => i18n.changeLanguage("en")} src={en} /> */}
+            <ChangLanguage />
           </Icon>
 
           <AboutContent>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Sidebar from "../SideBar";
-import PageContentainer from "../contents/index";
+// import PageContentainer from "../contents/index";
+import PageContentainer from "../Contents/index";
 
 const Page2 = () => {
   const [isOpen, setIsOpen] = useState(false);

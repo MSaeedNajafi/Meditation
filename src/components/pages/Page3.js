@@ -10,7 +10,7 @@ const Page3 = () => {
         height: "100%",
       }}
     >
-      <h1>Page 3</h1>
+      <h1>Page sadad3</h1>
     </div>
   );
 };

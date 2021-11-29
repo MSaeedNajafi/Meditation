@@ -45,7 +45,7 @@ const MeditateElements = () => {
       <MeditateContainer id="Meditate">
         <MeditateH1>{t("howto")}</MeditateH1>
         <MeditateDesc>{t("finda")}</MeditateDesc>
-        <Divider className={classes.root} />
+        {/* <Divider className={classes.root} /> */}
 
         <MeditateWrapper>
           <MeditateCard>
@@ -79,7 +79,7 @@ const MeditateElements = () => {
             <MeditateP>{t("withkindnesstxt")}</MeditateP>
           </MeditateCard>
         </MeditateWrapper>
-        <Divider className={classes.btm} />
+        {/* <Divider className={classes.btm} /> */}
         <MeditateBottomDesc>{t("btmtxt")}</MeditateBottomDesc>
       </MeditateContainer>
     </>

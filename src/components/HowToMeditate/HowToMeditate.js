@@ -78,8 +78,9 @@ export const MeditateH1 = styled.h1`
   font-size: 2.5rem;
   color: #010606;
   margin-bottom: 32px;
+  color: #0b0b0b;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: captazile;
   @media screen and (max-width: 480px) {
     height: 2rem;
     font-size: 1rem;
@@ -102,11 +103,11 @@ export const MeditateP = styled.p`
 
 export const MeditateDesc = styled.p`
   font-size: 24px;
-  text-transform: uppercase;
+  text-transform: captalize;
   color: ##010606;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   padding: 0 68px;
-
+  color: #0b0b0b;
   @media screen and (max-width: 480px) {
     height: 2rem;
     font-size: 16px;
@@ -115,11 +116,12 @@ export const MeditateDesc = styled.p`
 `;
 
 export const MeditateBottomDesc = styled.p`
-  font-size: 24px;
+  font-size: 20px;
   color: #010606;
   margin-top: 20px;
   padding: 0 68px;
   width: 70%;
+  color: #0b0b0b;
   @media screen and (max-width: 480px) {
     height: 2rem;
     font-size: 16px;

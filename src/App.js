@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
-
+import Page2 from "./components/pages/Page2";
 function App() {
   return (
     //fragments
@@ -19,7 +19,7 @@ function App() {
         {/* <Route path="/page2" component={Page2} /> */}
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
-        {/* <Route path="/page3" component={Page3} /> */}
+        <Route path="/termsandconditions" component={Page2} />
       </Switch>
     </Router>
   );

@@ -21,6 +21,7 @@ import {
   NavLinkTo,
   SpanElem,
 } from "./NavbarElements";
+import ChangLanguage from "./ChangLanguage";
 import en from "../../images/flags/en.png";
 import nl from "../../images/flags/nl.png";
 
@@ -69,7 +70,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  Meditation
+                  What
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -89,11 +90,23 @@ const Navbar = ({ toggle }) => {
                   smooth={true}
                   duration={500}
                   spy={true}
-                  to="id3"
+                  to="how"
                   exact="true"
                   offset={-100}
                 >
-                  More
+                  How
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  to="pricing"
+                  exact="true"
+                  offset={-100}
+                >
+                  Prices
                 </NavLink>
               </NavItem>
             </NavMenu>
@@ -107,10 +120,11 @@ const Navbar = ({ toggle }) => {
               >
                 Contact Me
               </NavBtnLink>
-              <div style={{ paddingLeft: 5 }}>
+              <ChangLanguage />
+              {/* <div style={{ paddingLeft: 5 }}>
                 <Emoji onClick={() => i18n.changeLanguage("nl")} src={nl} />
                 <Emoji onClick={() => i18n.changeLanguage("en")} src={en} />
-              </div>
+              </div> */}
             </NavBtn>
           </NavBarCotainer>
         </Nav>

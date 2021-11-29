@@ -41,7 +41,7 @@ const ServicesElements = () => {
 
   return (
     <>
-      <ServicesContainer id="services">
+      <ServicesContainer id="how">
         <ServicesH1>{t("practicemed")}</ServicesH1>
         <Divider className={classes.root} />
         <ServicesWrapper>

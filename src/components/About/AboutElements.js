@@ -123,7 +123,7 @@ export const AboutButton = styled(Link)`
   border-radius: 4px;
   color: ${COL.formBtnTextColor};
   font-size: 20px;
-  cursor: pointer;
+  cursor: pointe7r;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -151,7 +151,7 @@ export const Text = styled.span`
 `;
 
 export const TextInWrapper = styled.p`
-  text-align: justify;
+  // text-align: justify;
   color: ${COL.formSpanColor};
   font-size: 20px;
 `;

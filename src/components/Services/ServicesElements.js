@@ -71,9 +71,9 @@ export const ServicesIcon = styled.img`
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2rem;
-  color: ${COL.SerivesH1Color};
-  margin-bottom: 64px;
+  font-size: 1.5rem;
+  color: #010606;
+  margin-bottom: 32px;
   text-transform: uppercase;
   text-align: center;
 
@@ -95,12 +95,18 @@ export const ServicesH1 = styled.h1`
 
 export const ServicesH2 = styled.h2`
   font-size: 1.5rem;
-  color: ${COL.SerivesH1Color};
+  color: #010606;
   margin-bottom: 10px;
 `;
 
 export const ServicesP = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-align: left;
+  color: #010606;
+`;
+
+export const ServicesP1 = styled.p`
+  font-size: 1.3rem;
   text-align: center;
-  color: ${COL.SerivesH1Color};
+  color: #010606;
 `;
