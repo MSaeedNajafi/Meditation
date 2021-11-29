@@ -3,7 +3,7 @@ import COL from "../Colors";
 import bg from "../../images/bg images/bg3.jpg";
 
 export const MeditateContainer = styled.div`
-  height: 1300px;
+  height: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,7 +120,7 @@ export const MeditateBottomDesc = styled.p`
   color: #010606;
   margin-top: 20px;
   padding: 0 68px;
-  width: 70%;
+  width: 100%;
   color: #0b0b0b;
   @media screen and (max-width: 480px) {
     height: 2rem;

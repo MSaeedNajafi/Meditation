@@ -3,7 +3,7 @@ import COL from "../Colors";
 import bg from "../../images/bg images/bg3.jpg";
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;

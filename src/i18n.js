@@ -18,8 +18,8 @@ i18n
   .init(
     {
       backend: {
-        // loadPath: server + "/locals/{{lng}}/{{ns}}",
-        loadPath: "http://localhost:3000/locals/{{lng}}/{{ns}}",
+        loadPath: server + "/locals/{{lng}}/{{ns}}",
+        // loadPath: "http://localhost:3000/locals/{{lng}}/{{ns}}",
         allowMultiLoading: false,
         crossDomain: true,
       },

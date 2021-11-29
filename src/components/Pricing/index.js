@@ -91,13 +91,15 @@ function PricingContent() {
         {/* Hero unit */}
         <Container
           disableGutters
-          maxWidth="sm"
+          maxWidth="md"
           component="main"
           sx={{ pt: 8, pb: 6 }}
         >
           <ServicesH1>{t("Pricing")}</ServicesH1>
 
-          <ServicesP>{t("PricingTxt")}</ServicesP>
+          <ServicesP style={{ textAlign: "center", padding: 20 }}>
+            {t("PricingTxt")}
+          </ServicesP>
         </Container>
         {/* End hero unit */}
         <Container maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
@@ -221,12 +223,12 @@ function PricingContent() {
         {/* Hero unit */}
         <Container
           disableGutters
-          maxWidth="sm"
+          // maxWidth="sm"
           component="main"
           sx={{ pt: 8, pb: 6 }}
         >
           <ServicesH1>{t("privatess")}</ServicesH1>
-          <ServicesP>{t("privatesstxt")}</ServicesP>
+          <ServicesP style={{ padding: 20 }}>{t("privatesstxt")}</ServicesP>
         </Container>
         {/* End hero unit */}
         <Container maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
