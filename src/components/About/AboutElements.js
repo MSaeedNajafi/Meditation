@@ -45,7 +45,7 @@ export const Icon = styled(Link)`
   margin-left: 32px;
   margin-top: 32px;
   text-decoration: none;
-  color: ${COL.signinIconColor};
+  color: #0b0b0b;
   font-weight: bold;
   font-size: 32px;
 

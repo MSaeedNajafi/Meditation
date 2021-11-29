@@ -31,7 +31,7 @@ const CssTextField = styled(TextField)({
       borderColor: "#ffda6b",
     },
     "&:hover fieldset": {
-      borderColor: "white",
+      borderColor: "#0b0b0",
       borderRadius: 4,
     },
     "&.Mui-focused fieldset": {
@@ -113,24 +113,33 @@ export default function ContactSide() {
             <Icon to="/">
               Meditation<SpanElem> with </SpanElem>Fauzia
             </Icon>
-            <Divider variant="inset" component="li" />
-            <Typography component="h1" variant="h5" style={{ color: "white" }}>
-              <Chip
-                icon={<EmailIcon style={{ color: "white" }} />}
-                label="E-mail: "
-                style={{ color: "white" }}
-              />
-              fsucces30@hotmail.com
-            </Typography>
-            <Typography component="h1" variant="h5" style={{ color: "white" }}>
-              <Chip
-                icon={<MdPhone style={{ color: "white" }} />}
-                label="Telefoon: "
-                style={{ color: "white" }}
-              />
-              06 11 07 84 03
-            </Typography>
-
+            {/* <Divider variant="inset" component="line" /> */}
+            <Grid>
+              <Typography
+                component="h5"
+                variant="title"
+                style={{ color: "#0b0b0" }}
+              >
+                <Chip
+                  icon={<EmailIcon style={{ color: "#0b0b0" }} />}
+                  label="E-mail:"
+                  style={{ color: "#0b0b0" }}
+                />
+                fsucces30@hotmail.com
+              </Typography>
+              <Typography
+                component="h5"
+                variant="title"
+                style={{ color: "#0b0b0" }}
+              >
+                <Chip
+                  icon={<MdPhone style={{ color: "#0b0b0" }} />}
+                  label="Telefoon: "
+                  style={{ color: "#0b0b0b" }}
+                />
+                06 11 07 84 03
+              </Typography>
+            </Grid>
             <Box
               component="form"
               noValidate
@@ -210,7 +219,7 @@ export default function ContactSide() {
                 <Typography
                   variant="body2"
                   style={{
-                    color: "white",
+                    color: "#0b0b0",
                     fontSize: 24,
                     fontWeight: "bold",
                     textTransform: "capitalize",

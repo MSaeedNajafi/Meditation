@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Navbar from "../Navbar";
-import Sidebar from "../SideBar";
+import Sidebar2 from "../SideBar2/";
 // import PageContentainer from "../contents/index";
 import PageContentainer from "../Contents/index";
 import Navbar2 from "../Navbar/Navbar2";
+import Footer from "../Footer";
 
 const Page2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +12,10 @@ const Page2 = () => {
   };
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar2 isOpen={isOpen} toggle={toggle} />
       <Navbar2 toggle={toggle} />
       <PageContentainer />
+      <Footer />
       {/* <div
         style={{
           display: "flex",

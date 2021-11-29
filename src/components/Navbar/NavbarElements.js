@@ -29,7 +29,9 @@ export const Nav = styled.nav`
 `;
 
 export const Nav2 = styled.nav`
-  background: transparent;
+  background: ${({ scrollNav }) =>
+    scrollNav ? COL.navBackgroundColor : "transparent"};
+  // background: transparent;
   // box-shadow: ${({ scrollNav }) =>
     //   scrollNav ? "0 1px 3px rgba(0, 0, 0, 0.9)" : ""};
     //background: ${({ scrollNav }) =>

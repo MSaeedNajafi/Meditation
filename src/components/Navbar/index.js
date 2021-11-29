@@ -22,8 +22,6 @@ import {
   SpanElem,
 } from "./NavbarElements";
 import ChangLanguage from "./ChangLanguage";
-import en from "../../images/flags/en.png";
-import nl from "../../images/flags/nl.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
