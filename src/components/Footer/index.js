@@ -23,6 +23,7 @@ import {
   SocialIconLink,
 } from "./FooterElements";
 
+import { SpanElem } from "../Navbar/NavbarElements";
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -35,7 +36,7 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo onClick={toggleHome} to="/">
-                Meditation <span style={{ fontSize: 14 }}> with</span> Fauzia
+                Meditation<SpanElem> with </SpanElem>Fauzia
               </SocialLogo>
               {/* <FooterLinksItems>
                 <FooterLinkTitle>About US</FooterLinkTitle>
@@ -48,7 +49,7 @@ const Footer = () => {
                 Saeed Najafi © {new Date().getFullYear()} All rights reserved.
               </WebsiteRights>
               <FooterLinksItems>
-                <FooterLinkTitle>More</FooterLinkTitle>
+                {/* <FooterLinkTitle>More</FooterLinkTitle> */}
                 {/* <FooterLink to="/signin">Testomonials</FooterLink>
                 <FooterLink to="/signin">Careers</FooterLink>
                 <FooterLink to="/signin">Inverstors</FooterLink> */}

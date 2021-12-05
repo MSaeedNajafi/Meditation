@@ -39,7 +39,6 @@ const PageContent = () => {
   return (
     <>
       <PageContentainer>
-        {/* <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}> */}
         <Wrpper>
           <List
             component="nav"
@@ -59,7 +58,6 @@ const PageContent = () => {
           >
             {content}
           </List>
-          {/* </Box> */}
         </Wrpper>
       </PageContentainer>
     </>

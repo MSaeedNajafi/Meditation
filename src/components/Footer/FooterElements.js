@@ -38,11 +38,11 @@ export const FooterLinksWrapper = styled.div`
 `;
 
 export const FooterLinksItems = styled.div`
-  display: flex;
+  // display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 16px;
-  text-align: left;
+  text-align: center;
   width: 160px;
   box-sizing: border-box;
   color: ${COL.footerLinkItemsColor};
@@ -97,6 +97,9 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   // margin-bottom: 16px;
   font-weight: bold;
+  @media screen and (max-width: 820px) {
+    margin-bottom: 15px;
+  }
 `;
 
 export const WebsiteRights = styled.small`

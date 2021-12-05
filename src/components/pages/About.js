@@ -12,7 +12,7 @@ function AboutMe() {
   };
   return (
     <>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Sidebar2 isOpen={isOpen} toggle={toggle} />
       <Navbar2 toggle={toggle} />
       <About />
