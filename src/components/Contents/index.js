@@ -8,6 +8,34 @@ import ListSubheader from "@mui/material/ListSubheader";
 
 const PageContent = () => {
   const [t] = useTranslation();
+
+  const terms = [
+    t("Boeking"),
+    t("Meditatiebegeleider"),
+    t("Graag"),
+    t("Deelname"),
+    t("geenmedicatie"),
+    t("Persoonlijke"),
+    t("Restitutie"),
+    t("Wees"),
+    t("Betaling"),
+    t("Contactgegevens"),
+  ];
+
+  let content = [];
+  terms.map((t, index) => {
+    content.push(
+      <ListItemButton>
+        <ListItemText
+          style={{ fontSize: 24, color: "white" }}
+          primary={index + 1 + ") " + t}
+        />
+      </ListItemButton>
+    );
+  });
+
+  console.log(terms);
+
   return (
     <>
       <PageContentainer>
@@ -29,72 +57,7 @@ const PageContent = () => {
               </ListSubheader>
             }
           >
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Boeking")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Meditatiebegeleider")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Graag")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Deelname")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Persoonlijke")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Restitutie")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Wees")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Betaling")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Contactgegevens")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Betaling")}
-              />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemText
-                style={{ fontSize: 24, color: "white" }}
-                primary={t("Contactgegevens")}
-              />
-            </ListItemButton>
+            {content}
           </List>
           {/* </Box> */}
         </Wrpper>
