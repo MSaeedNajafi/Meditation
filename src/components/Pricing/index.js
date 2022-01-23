@@ -1,6 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
+import { ButtonR } from "../ButtonElemts";
+
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -188,12 +189,12 @@ function PricingContent() {
                     {/* </ul> */}
                   </CardContent>
                   <CardActions>
-                    <Button
-                      fullWidth
-                      href="/contact"
+                    <ButtonR
+                      to="/contact"
                       variant={tier.buttonVariant}
                       // sx={{ mt: 3, mb: 2 }}
                       style={{
+                        width: "100%",
                         backgroundColor:
                           tier.buttonVariant === "outlined"
                             ? "white"
@@ -214,7 +215,7 @@ function PricingContent() {
                       }}
                     >
                       {tier.buttonText}
-                    </Button>
+                    </ButtonR>
                   </CardActions>
                 </CssCard>
               </Grid>
@@ -326,11 +327,12 @@ function PricingContent() {
                     </div>
                   </CardContent>
                   <CardActions>
-                    <Button
-                      fullWidth
+                    <ButtonR
+                      to="/contact"
                       variant={tier.buttonVariant}
                       // sx={{ mt: 3, mb: 2 }}
                       style={{
+                        width: "100%",
                         backgroundColor:
                           tier.buttonVariant === "outlined"
                             ? "white"
@@ -351,7 +353,7 @@ function PricingContent() {
                       }}
                     >
                       {tier.buttonText}
-                    </Button>
+                    </ButtonR>
                   </CardActions>
                 </CssCard>
               </Grid>
