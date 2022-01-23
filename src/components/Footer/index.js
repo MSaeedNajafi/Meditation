@@ -22,9 +22,12 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements";
+import { useTranslation } from "react-i18next";
 
 import { SpanElem } from "../Navbar/NavbarElements";
 const Footer = () => {
+  const [t, i18n] = useTranslation();
+
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -54,7 +57,7 @@ const Footer = () => {
                 <FooterLink to="/signin">Careers</FooterLink>
                 <FooterLink to="/signin">Inverstors</FooterLink> */}
                 <FooterLink to="/termsandconditions">
-                  Terms of services
+                  {t("AlgemeneVoorwaarden")}
                 </FooterLink>
               </FooterLinksItems>
               {/* </FooterLinksContainer> */}

@@ -20,6 +20,7 @@ import Icon6 from "../../images/svg-16.svg";
 import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
 import { useTranslation } from "react-i18next";
+import { ServicesH1 } from "../Services/ServicesElements";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -43,10 +44,10 @@ const MeditateElements = () => {
   return (
     <>
       <MeditateContainer id="how">
-        <MeditateH1>{t("howto")}</MeditateH1>
+        {/* <MeditateH1>{t("howto")}</MeditateH1> */}
+        <ServicesH1>{t("practicemed")}</ServicesH1>
         <MeditateDesc>{t("finda")}</MeditateDesc>
         {/* <Divider className={classes.root} /> */}
-
         <MeditateWrapper>
           <MeditateCard>
             <MeditateIcon src={Icon1} />

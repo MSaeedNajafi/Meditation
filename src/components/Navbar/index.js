@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinkTo to="/about">About Me</NavLinkTo>
+                <NavLinkTo to="/about">{t("About-Me")}</NavLinkTo>
               </NavItem>
               <NavItem>
                 <NavLink
@@ -68,7 +68,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  What
+                  {t("Whatt")}
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -80,7 +80,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  Why
+                  {t("Whyy")}
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -92,7 +92,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  How
+                  {t("how=")}
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -104,7 +104,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-100}
                 >
-                  Prices
+                  {t("prices=")}
                 </NavLink>
               </NavItem>
             </NavMenu>
@@ -116,7 +116,7 @@ const Navbar = ({ toggle }) => {
                 }}
                 to="/contact"
               >
-                Contact Me
+                {t("ccccccc")}
               </NavBtnLink>
               <ChangLanguage />
               {/* <div style={{ paddingLeft: 5 }}>

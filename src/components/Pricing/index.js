@@ -30,53 +30,53 @@ function PricingContent() {
   const [t, i18n] = useTranslation();
   const tiers = [
     {
-      title: "Group Meditation session",
+      title: t("groepsessie"),
       price: "13.00",
-      description: ["90 minutes", "1 session"],
+      description: ["90 " + t("minuten"), "1  " + t("sessie")],
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
     {
-      title: " Group Meditation session",
-      subheader: "Trial",
+      title: t("Proefsessie"),
+      // subheader: "Trial",
       price: "7.50",
-      description: ["90 minutes", "1 session"],
+      description: ["90 " + t("minuten"), "1  " + t("sessie")],
       buttonText: "Reserveren",
       buttonVariant: "contained",
     },
     {
-      title: "Group Meditation session",
+      title: "3 x " + t("groepsessie"),
       price: "38.00",
-      description: ["90 minutes", "3 session"],
+      description: ["90 " + t("minuten"), "per  " + t("sessie")],
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
   ];
   const tiers2 = [
     {
-      title: "Private Meditation session",
+      title: "Privé sessie",
       subheader: "Online",
-      price: "22.50",
-      description: ["30 minutes", "1 session"],
-      extra: t("reiskosten"),
+      price: "10.00",
+      description: ["30 " + t("minuten"), "1 " + t("sessie")],
+      // extra: t("reiskosten"),
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
     {
-      title: " Private Meditation session",
+      title: " Privé " + t("sessie"),
       subheader: "Online",
-      price: "10.00",
-      description: ["45 minutes", "1 session"],
-      extra: t("reiskosten"),
+      price: "15.00",
+      description: ["45 " + t("minuten"), "1 " + t("sessie")],
+      // extra: t("reiskosten"),
       buttonText: "Reserveren",
       buttonVariant: "contained",
     },
     {
-      title: "Private Meditation session",
-      subheader: "Online",
-      price: "45.00",
-      description: ["60 minutes", "1 session"],
-      extra: t("reiskosten"),
+      title: t("dsadaadsasd"),
+      // subheader: "Online",
+      price: "35.00",
+      description: ["50 " + t("minuten"), "1 " + t("sessie")],
+      extra: "" + t("reiskosten") + "",
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
@@ -93,16 +93,16 @@ function PricingContent() {
           disableGutters
           maxWidth="md"
           component="main"
-          sx={{ pt: 8, pb: 6 }}
+          sx={{ pt: 8, pb: 1 }}
         >
           <ServicesH1>{t("Pricing")}</ServicesH1>
 
-          <ServicesP style={{ textAlign: "center", padding: 20 }}>
+          <ServicesP style={{ textAlign: "center" }}>
             {t("PricingTxt")}
           </ServicesP>
         </Container>
         {/* End hero unit */}
-        <Container maxWidth="md" component="main" sx={{ pt: 8, pb: 6 }}>
+        <Container maxWidth="md" component="main" sx={{ pt: 8, pb: 1 }}>
           <Grid container spacing={5} alignItems="flex-end">
             {tiers.map((tier) => (
               // Enterprise card is full width at sm breakpoint
@@ -225,7 +225,7 @@ function PricingContent() {
           disableGutters
           // maxWidth="sm"
           component="main"
-          sx={{ pt: 8, pb: 6 }}
+          sx={{ pt: 8, pb: 1 }}
         >
           <ServicesH1>{t("privatess")}</ServicesH1>
           <ServicesP style={{ padding: 20 }}>{t("privatesstxt")}</ServicesP>
@@ -312,6 +312,7 @@ function PricingContent() {
                         flexWrap: "nowrap",
                         justifyContent: "center",
                         alignItems: "stretch",
+                        fontSize: 12,
                       }}
                     >
                       {tier.extra}

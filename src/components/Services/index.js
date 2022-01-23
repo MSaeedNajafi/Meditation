@@ -17,6 +17,7 @@ import Icon3 from "../../images/svg-6.svg";
 import img1 from "../../images/Slider/3.jpg";
 import img2 from "../../images/Slider/2.jpg";
 import img3 from "../../images/bg/bg1.jpg";
+import { MeditateH1 } from "../HowToMeditate/HowToMeditate";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,7 +43,10 @@ const ServicesElements = () => {
   return (
     <>
       <ServicesContainer id="how">
-        <ServicesH1>{t("practicemed")}</ServicesH1>
+        <MeditateH1>{t("howto")}</MeditateH1>
+
+        {/* <ServicesH1>{t("practicemed")}</ServicesH1> */}
+
         <Divider className={classes.root} />
         <ServicesWrapper>
           <ServicesCard>

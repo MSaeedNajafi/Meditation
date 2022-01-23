@@ -21,7 +21,7 @@ export const Container = styled.div`
   background-image: url(${img});
   width: 100%;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   // background-repeat: no-repeat;
   // background: linear-gradient(
   //   180deg,
@@ -67,7 +67,8 @@ export const AboutContent = styled.div`
 `;
 
 export const About = styled.div`
-  background: ${COL.formBckGround};
+  // background: ${COL.formBckGround};
+  background: rgba(126, 136, 70, 0.85);
   max-width: 800px;
   height: auto;
   width: 100%;
@@ -76,7 +77,7 @@ export const About = styled.div`
   margin: 0 auto;
   padding: 40px 32px;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
   @media screen and (max-width: 400px) {
     padding: 32px 32px;
@@ -86,7 +87,7 @@ export const About = styled.div`
 export const AboutH1 = styled.h1`
   // margin-bottom: 8px;
   font-size: 24px;
-  color: ${COL.formH1Color};
+  color: #260513;
   font-weight: bold;
   text-align: center;
   // padding: 18px;
@@ -122,7 +123,7 @@ export const AboutButton = styled(Link)`
   padding: 16px 0;
   border: none;
   border-radius: 4px;
-  color: ${COL.formBtnTextColor};
+  color: #260513;
   font-size: 20px;
   cursor: pointe7r;
   font-weight: bold;
@@ -153,8 +154,9 @@ export const Text = styled.span`
 
 export const TextInWrapper = styled.p`
   // text-align: justify;
-  color: ${COL.formSpanColor};
+  color: #260513;
   font-size: 20px;
+  font-weight: 400;
 `;
 
 export const ImgOverText = styled.img`

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElemts";
+import { Button, ButtonR } from "../ButtonElemts";
 
 import {
   InfoContainer,
@@ -46,19 +46,39 @@ const InfoSection = ({
                 <Title lightText={lightText}>{title}</Title>
                 <Description darkText={darkText}>{decsription}</Description>
                 <BtnWrap>
-                  <Button
-                    to={goto}
-                    smooth={true}
-                    duartion={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
+                  {id == "id3" ? (
+                    <>
+                      <ButtonR
+                        to="/contact"
+                        smooth={true}
+                        duartion={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                        primary={primary ? 1 : 0}
+                        dark={dark ? 1 : 0}
+                        dark2={dark2 ? 1 : 0}
+                      >
+                        {buttonLabel}
+                      </ButtonR>
+                    </>
+                  ) : (
+                    <>
+                      <Button
+                        to={goto}
+                        smooth={true}
+                        duartion={500}
+                        spy={true}
+                        exact="true"
+                        offset={-80}
+                        primary={primary ? 1 : 0}
+                        dark={dark ? 1 : 0}
+                        dark2={dark2 ? 1 : 0}
+                      >
+                        {buttonLabel}
+                      </Button>
+                    </>
+                  )}
                 </BtnWrap>
               </TextWrapper>
             </Coulmn1>

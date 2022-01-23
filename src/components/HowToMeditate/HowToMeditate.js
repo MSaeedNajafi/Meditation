@@ -9,7 +9,7 @@ export const MeditateContainer = styled.div`
   justify-content: center;
   align-items: center;
   // background: ${COL.servicesBckColor};
-  background: #f2e9d2;
+  background: #7e8846;
   // background-image: url(${bg});
   // background-repeat: no-repeat;
   // background-size: auto 100%;
@@ -116,11 +116,11 @@ export const MeditateDesc = styled.p`
 `;
 
 export const MeditateBottomDesc = styled.p`
-  font-size: 20px;
+  font-size: 24px;
   color: #010606;
   margin-top: 20px;
   padding: 0 68px;
-  width: 100%;
+  width: 70%;
   color: #0b0b0b;
   @media screen and (max-width: 480px) {
     height: 2rem;

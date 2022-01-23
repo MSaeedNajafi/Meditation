@@ -29,10 +29,11 @@ export const Wrpper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${COL.formBckGround};
+  // background: ${COL.formBckGround};
+  background: rgba(126, 136, 70, 0.85);
   padding: 50px;
   border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
   @media screen and (max-width: 500px) {
     // margin-top: 300px;
   }

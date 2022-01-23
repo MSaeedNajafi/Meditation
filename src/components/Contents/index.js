@@ -5,6 +5,9 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import ListSubheader from "@mui/material/ListSubheader";
+import EmailIcon from "@mui/icons-material/Email";
+import Chip from "@mui/material/Chip";
+import MdPhone from "@mui/icons-material/Phone";
 
 const PageContent = () => {
   const [t] = useTranslation();
@@ -19,7 +22,8 @@ const PageContent = () => {
     t("Restitutie"),
     t("Wees"),
     t("Betaling"),
-    t("Contactgegevens"),
+    // t("Contactgegevens"),
+    // t("e-mmail"),
   ];
 
   let content = [];
@@ -27,7 +31,7 @@ const PageContent = () => {
     content.push(
       <ListItemButton>
         <ListItemText
-          style={{ fontSize: 24, color: "white" }}
+          style={{ fontSize: 24, color: "#260513" }}
           primary={index + 1 + ") " + t}
         />
       </ListItemButton>
@@ -49,7 +53,7 @@ const PageContent = () => {
                   fontSize: 24,
                   fontWeight: "bold",
                   backgroundColor: "transparent",
-                  color: "white",
+                  color: "#260513",
                 }}
               >
                 {t("algemene")}
@@ -57,6 +61,26 @@ const PageContent = () => {
             }
           >
             {content}
+            <ListItemButton>
+              <ListItemText
+                style={{ fontSize: 24, color: "#260513" }}
+                // primary={"11) "}
+              >
+                10) {t("ccc")}
+                <Chip
+                  icon={<MdPhone style={{ color: "black" }} />}
+                  label="Telefoon: "
+                  style={{ color: "black" }}
+                />
+                06 11 07 84 03
+                <Chip
+                  icon={<EmailIcon style={{ color: "black" }} />}
+                  label="E-mail:"
+                  style={{ color: "black" }}
+                />
+                fsucces30@hotmail.com
+              </ListItemText>
+            </ListItemButton>
           </List>
         </Wrpper>
       </PageContentainer>

@@ -23,7 +23,7 @@ const SideBar2 = ({ isOpen, toggle }) => {
             Home
           </SideBarLinkRouter>
           <SideBarLinkRouter onClick={toggle} to="/about">
-            about
+            About
           </SideBarLinkRouter>
           <SideBarLinkRouter onClick={toggle} to="/termsandconditions">
             Terms & Conditions

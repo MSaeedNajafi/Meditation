@@ -38,7 +38,7 @@ const HeroSection = () => {
           {/* </span> */}
         </HeroH1>
         {/* <HeroP>You always remain in control of your funds.</HeroP> */}
-        <HeroH1>{t("videoText2")}.</HeroH1>
+        <HeroH1>{t("videoText2")}</HeroH1>
 
         <HeroBtnWrapper>
           <Button

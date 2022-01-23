@@ -65,7 +65,7 @@ const Navbar2 = ({ toggle }) => {
                 }}
                 to="/contact"
               >
-                Contact Me
+                {t("ccccccc")}
               </NavBtnLink>
               <ChangLanguage />
             </NavBtn>
