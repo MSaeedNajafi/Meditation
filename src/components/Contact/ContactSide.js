@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useRef } from "react";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
@@ -14,7 +14,7 @@ import { Icon, SpanElem } from "../About/AboutElements";
 import MdPhone from "@mui/icons-material/Phone";
 import Chip from "@mui/material/Chip";
 import EmailIcon from "@mui/icons-material/Email";
-
+import emailjs from "@emailjs/browser";
 // import img from "../../images/self/contactme.jpg";
 
 import img from "../../images/self/sitting.jpg";
@@ -59,16 +59,40 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function ContactSide() {
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const preventDefault = (event) => event.preventDefault();
+  const form = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
+    // const data = new FormData(event.currentTarget);
+    setLoading(true);
+    console.log(email, subject, message);
+
+    emailjs
+      .sendForm(
+        "meditationwithfauzia",
+        "meditationwithfauzia",
+        form.current,
+        "user_oICXidG2G3XkZVLMmEpb2"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Your message has been sent!");
+          setLoading(false);
+          setEmail("");
+          setSubject("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Error");
+        }
+      );
   };
 
   return (
@@ -142,15 +166,17 @@ export default function ContactSide() {
             </Grid>
             <Box
               component="form"
-              noValidate
+              // noValidate
               onSubmit={handleSubmit}
               sx={{ mt: 1 }}
+              ref={form}
               // style={{ backgroundColor: "red" }}
             >
               <CssTextField
                 margin="normal"
                 required
                 fullWidth
+                name="user_email"
                 label="Email Address"
                 id="email"
                 autoComplete="email"
@@ -163,6 +189,10 @@ export default function ContactSide() {
                     color: "#ffda6b",
                   },
                 }}
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
+                value={email}
               />
 
               <CssTextField
@@ -173,7 +203,7 @@ export default function ContactSide() {
                 label="Subject"
                 type="text"
                 id="subject"
-                autoComplete="subject"
+                // autoComplete="subject"
                 style={{
                   backgroundColor: "grey",
                 }}
@@ -182,6 +212,10 @@ export default function ContactSide() {
                     color: "#ffda6b",
                   },
                 }}
+                onChange={(event) => {
+                  setSubject(event.target.value);
+                }}
+                value={subject}
               />
               <CssTextField
                 margin="normal"
@@ -189,6 +223,7 @@ export default function ContactSide() {
                 fullWidth
                 id="message"
                 label="Message"
+                name="message"
                 multiline
                 rows={4}
                 style={{
@@ -199,6 +234,10 @@ export default function ContactSide() {
                     color: "#ffda6b",
                   },
                 }}
+                onChange={(event) => {
+                  setMessage(event.target.value);
+                }}
+                value={message}
               />
               <Button
                 type="submit"
@@ -215,6 +254,7 @@ export default function ContactSide() {
                   cursor: "pointer",
                   fontWeight: "bold",
                 }}
+                disabled={loading ? true : false}
               >
                 <Typography
                   variant="body2"
@@ -226,7 +266,7 @@ export default function ContactSide() {
                   }}
                   align="center"
                 >
-                  Contact Me
+                  {loading ? "Sending ..." : "Contact Me"}
                 </Typography>
               </Button>
               <Copyright sx={{ mt: 5 }} />
