@@ -30,52 +30,58 @@ function PricingContent() {
   const [t, i18n] = useTranslation();
   const tiers = [
     {
+      id: "1",
       title: t("groepsessie"),
       price: "13.00",
-      description: ["90 " + t("minuten"), "1  " + t("sessie")],
+      description: ["90 " + t("minuten") + " 1  " + t("sessie")],
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
     {
+      id: "2",
       title: t("Proefsessie"),
       // subheader: "Trial",
       price: "7.50",
-      description: ["90 " + t("minuten"), "1  " + t("sessie")],
+      description: ["90 " + t("minuten") + " 1  " + t("sessie")],
       buttonText: "Reserveren",
       buttonVariant: "contained",
     },
     {
+      id: "3",
       title: "3 x " + t("groepsessie"),
-      price: "38.00",
-      description: ["90 " + t("minuten"), "per  " + t("sessie")],
+      price: "35.00",
+      description: ["90 " + t("minuten") + " per  " + t("sessie")],
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
   ];
   const tiers2 = [
     {
-      title: "Privé sessie",
+      id: "4",
+      title: t("dsadaadsasd"),
       subheader: "Online",
       price: "10.00",
-      description: ["30 " + t("minuten"), "1 " + t("sessie")],
+      description: ["30 " + t("minuten") + " 1 " + t("sessie")],
       // extra: t("reiskosten"),
       buttonText: "Reserveren",
       buttonVariant: "outlined",
     },
     {
-      title: " Privé " + t("sessie"),
+      id: "5",
+      title: t("dsadaadsasd"),
       subheader: "Online",
       price: "15.00",
-      description: ["45 " + t("minuten"), "1 " + t("sessie")],
+      description: ["45 " + t("minuten") + " 1 " + t("sessie")],
       // extra: t("reiskosten"),
       buttonText: "Reserveren",
       buttonVariant: "contained",
     },
     {
+      id: "6",
       title: t("dsadaadsasd"),
       // subheader: "Online",
       price: "35.00",
-      description: ["50 " + t("minuten"), "1 " + t("sessie")],
+      description: ["50 " + t("minuten") + " 1 " + t("sessie")],
       extra: "" + t("reiskosten") + "",
       buttonText: "Reserveren",
       buttonVariant: "outlined",
@@ -108,7 +114,7 @@ function PricingContent() {
               // Enterprise card is full width at sm breakpoint
               <Grid
                 item
-                key={tier.title}
+                key={tier.id}
                 xs={12}
                 sm={tier.title === "Enterprise" ? 12 : 6}
                 md={4}
@@ -173,7 +179,7 @@ function PricingContent() {
                           //   align="center"
                           //   key={line}
                           // >
-                          <>{line + " "}</>
+                          <p key={Math.random() * (100 - 1)}>{line + " "}</p>
                         )
 
                         // </Typography>
@@ -237,7 +243,7 @@ function PricingContent() {
               // Enterprise card is full width at sm breakpoint
               <Grid
                 item
-                key={tier.title}
+                key={tier.id}
                 xs={12}
                 sm={tier.title === "Enterprise" ? 12 : 6}
                 md={4}
@@ -300,7 +306,7 @@ function PricingContent() {
                           //   align="center"
                           //   key={line}
                           // >
-                          <>{line + " "}</>
+                          <p key={Math.random() * (100 - 1)}>{line + " "}</p>
                         )
                         // </Typography>
                       )}
