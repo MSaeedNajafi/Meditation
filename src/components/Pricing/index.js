@@ -190,6 +190,7 @@ function PricingContent() {
                   <CardActions>
                     <Button
                       fullWidth
+                      href="/contact"
                       variant={tier.buttonVariant}
                       // sx={{ mt: 3, mb: 2 }}
                       style={{

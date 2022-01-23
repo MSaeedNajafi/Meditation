@@ -60,6 +60,7 @@ const Footer = () => {
                   {t("AlgemeneVoorwaarden")}
                 </FooterLink>
               </FooterLinksItems>
+
               {/* </FooterLinksContainer> */}
               {/* <SocialIcons>
                 <SocialIconLink href="/" target="_blank" aria-label="Facebook">
@@ -81,7 +82,13 @@ const Footer = () => {
             </SocialMediaWrap>
             {/* <FooterLinksContainer> */}
           </SocialMedia>
-
+          <SocialIconLink
+            href="https://www.facebook.com/fauzmeditatie/"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <FaFacebook />
+          </SocialIconLink>
           {/* <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinksItems>
