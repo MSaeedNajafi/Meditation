@@ -10,6 +10,7 @@ import {
   SideBarRoute,
   SideBarLinkRouter,
 } from "./SidebarElements";
+import ChangLanguage from "../Navbar/ChangLanguage";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -28,9 +29,10 @@ const Sidebar = ({ isOpen, toggle }) => {
           {/* <SideBarLink onClick={toggle} to="id2">
             Page 2
           </SideBarLink>
-          <SideBarLink onClick={toggle} to="id3">
-            Page 3
-          </SideBarLink> */}
+          */}
+          <SideBarLink onClick={toggle} to="/">
+            <ChangLanguage />
+          </SideBarLink>
         </SideBarMenu>
         <SideBtnWrap>
           <SideBarRoute to="/contact">Contact Me</SideBarRoute>

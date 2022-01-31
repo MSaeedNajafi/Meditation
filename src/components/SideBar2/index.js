@@ -8,7 +8,12 @@ import {
   SideBarLinkRouter,
   SideBtnWrap,
   SideBarRoute,
+  SideBarLink,
 } from "./SidebarElements";
+
+import ChangLanguage from "../Navbar/ChangLanguage";
+import en from "../../images/flags/en.png";
+import nl from "../../images/flags/nl.png";
 
 const SideBar2 = ({ isOpen, toggle }) => {
   console.log(isOpen);
@@ -28,7 +33,11 @@ const SideBar2 = ({ isOpen, toggle }) => {
           <SideBarLinkRouter onClick={toggle} to="/termsandconditions">
             Terms & Conditions
           </SideBarLinkRouter>
+          <SideBarLink onClick={toggle} to="/">
+            <ChangLanguage />
+          </SideBarLink>
         </SideBarMenu>
+
         <SideBtnWrap>
           <SideBarRoute to="/contact">Contact Me</SideBarRoute>
         </SideBtnWrap>
